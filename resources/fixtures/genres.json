@@ -1,0 +1,65 @@
+[
+{
+    "model": "resources.genre",
+    "pk": 1,
+    "fields": {
+        "created": "2020-03-03T17:10:22.669Z",
+        "edited": "2020-03-03T17:10:22.670Z",
+        "name": "MMORPG"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 2,
+    "fields": {
+        "created": "2020-03-03T17:10:26.800Z",
+        "edited": "2020-03-03T17:10:26.800Z",
+        "name": "Adventure"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 3,
+    "fields": {
+        "created": "2020-03-03T17:11:04.407Z",
+        "edited": "2020-03-03T17:11:04.407Z",
+        "name": "Metroidvania"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 4,
+    "fields": {
+        "created": "2020-03-03T17:11:08.461Z",
+        "edited": "2020-03-03T17:11:08.461Z",
+        "name": "MMORPG"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 5,
+    "fields": {
+        "created": "2020-03-03T17:11:17.876Z",
+        "edited": "2020-03-03T17:11:17.876Z",
+        "name": "Real-time strategy (RTS)"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 6,
+    "fields": {
+        "created": "2020-03-03T17:11:26.042Z",
+        "edited": "2020-03-03T17:11:26.043Z",
+        "name": "Sports game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 7,
+    "fields": {
+        "created": "2020-03-03T17:11:32.966Z",
+        "edited": "2020-03-03T17:11:32.966Z",
+        "name": "Casual game"
+    }
+}
+]

@@ -8,11 +8,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CUSTOM_APPS = [
-    'resources',
-    'rest_framework',
-]
-
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -21,7 +16,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-] + CUSTOM_APPS
+    'resources',
+    'rest_framework',
+] 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

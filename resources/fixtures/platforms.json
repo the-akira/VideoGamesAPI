@@ -1,0 +1,54 @@
+[
+{
+    "model": "resources.platform",
+    "pk": 1,
+    "fields": {
+        "created": "2020-03-03T17:12:41.177Z",
+        "edited": "2020-03-03T17:12:41.177Z",
+        "name": "Super Nintendo Entertainment System (SNES)",
+        "developer": "Nintendo R&D2",
+        "generation": "Fourth generation",
+        "media": "ROM cartridge",
+        "cpu": "Ricoh 5A22 @ 3.58 MHz"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 2,
+    "fields": {
+        "created": "2020-03-03T17:13:19.512Z",
+        "edited": "2020-03-03T17:13:19.512Z",
+        "name": "PlayStation",
+        "developer": "Sony Computer Entertainment",
+        "generation": "Fifth generation",
+        "media": "CD-ROM",
+        "cpu": "R3000 @ 33.8688 MHz"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 3,
+    "fields": {
+        "created": "2020-03-03T17:22:10.073Z",
+        "edited": "2020-03-03T17:22:10.073Z",
+        "name": "Nintendo Entertainment System (NES)",
+        "developer": "Nintendo R&D2",
+        "generation": "Third generation",
+        "media": "ROM cartridge",
+        "cpu": "Ricoh 2A03 8-bit processor (MOS Technology 6502 core)"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 4,
+    "fields": {
+        "created": "2020-03-03T17:25:01.310Z",
+        "edited": "2020-03-03T17:25:01.311Z",
+        "name": "Sega Genesis",
+        "developer": "Sega",
+        "generation": "Fourth generation",
+        "media": "ROM cartridge",
+        "cpu": "Motorola 68000 @ 7.6 MHz"
+    }
+}
+]

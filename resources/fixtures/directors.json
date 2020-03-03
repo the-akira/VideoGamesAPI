@@ -1,0 +1,83 @@
+[
+{
+    "model": "resources.director",
+    "pk": 1,
+    "fields": {
+        "created": "2020-03-03T17:04:09.318Z",
+        "edited": "2020-03-03T17:04:09.318Z",
+        "name": "Ed Boon"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 2,
+    "fields": {
+        "created": "2020-03-03T17:04:20.838Z",
+        "edited": "2020-03-03T17:04:20.838Z",
+        "name": "Toru Iwatani"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 3,
+    "fields": {
+        "created": "2020-03-03T17:04:26.934Z",
+        "edited": "2020-03-03T17:04:26.934Z",
+        "name": "Yoji Shinkawa"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 4,
+    "fields": {
+        "created": "2020-03-03T17:04:47.630Z",
+        "edited": "2020-03-03T17:04:47.631Z",
+        "name": "Hideo Kojima"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 5,
+    "fields": {
+        "created": "2020-03-03T17:05:03.290Z",
+        "edited": "2020-03-03T17:05:03.290Z",
+        "name": "Koji Igarashi"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 6,
+    "fields": {
+        "created": "2020-03-03T17:05:08.354Z",
+        "edited": "2020-03-03T17:05:08.354Z",
+        "name": "Takashi Tezuka"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 7,
+    "fields": {
+        "created": "2020-03-03T17:05:15.831Z",
+        "edited": "2020-03-03T17:05:15.831Z",
+        "name": "Yoshio Sakamoto"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 8,
+    "fields": {
+        "created": "2020-03-03T17:05:21.077Z",
+        "edited": "2020-03-03T17:05:21.077Z",
+        "name": "Masahiro Ueno"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 9,
+    "fields": {
+        "created": "2020-03-03T17:27:02.335Z",
+        "edited": "2020-03-03T17:27:02.335Z",
+        "name": "Toru Hagihara"
+    }
+}
+]
