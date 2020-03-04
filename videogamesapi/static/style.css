@@ -125,6 +125,7 @@ hr{
 	font-family: 'Press Start 2P', cursive;
 	font-weight: bold;
 	margin-bottom: 0;
+	margin-top: 3.3px;
 }
 
 .icon{
@@ -143,4 +144,9 @@ hr{
 
 .icon:hover{
 	color: black;
+}
+
+.heart{
+	font-size: 1.255rem;
+	color: #9400ff;
 }
