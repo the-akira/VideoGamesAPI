@@ -7,6 +7,7 @@ body {
 
 .container{
 	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 .navbar{
@@ -39,7 +40,7 @@ body {
 /*	background: -webkit-linear-gradient(#49277e,#a09fd8);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;*/
-	color: #390459;
+	color: black;
 }
 
 .Typewriter__wrapper > a{
@@ -84,4 +85,61 @@ li{
 	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.7);
 	padding-bottom: 30px;
 	background-color: #a09fd8;
+}
+
+.title{
+	margin-top: 45px;
+	color: #a09fd8;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2.067rem;
+}
+
+.col-sm{
+	margin: 20px;
+	border: 1px solid #9400ff;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.7);
+	padding: 40px;
+	color: #a09fd8;
+	text-align: center;
+}
+
+hr{
+	background-color: #a09fd8;
+}
+
+.footer{
+	margin-top: 45px;
+	border: 1px solid white;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.7);
+	background-color: #a09fd8;
+	overflow:hidden;
+}
+
+.text-muted{
+	color: black !important;
+	padding-top: 10px;
+	padding-left: 20px;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.icon{
+	float: right;
+	color: #201e24;
+	padding: 0px 5px 3px 0px;
+}
+
+.icone{
+	color: #a09fd8;	
+}
+
+.icone:hover{
+	color: #9400ff;	
+}
+
+.icon:hover{
+	color: black;
 }

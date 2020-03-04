@@ -2,5 +2,40 @@
 
 {% block content %}
 {% include '_header.html' %}
+<h1 class="title">Start Exploring</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <a class="icone" href="/api/games"><i class="fas fa-gamepad fa-4x"></i></a>
+      <hr>
+      <h4>Vast List of Games</h4>
+    </div>
+    <div class="col-sm">
+      <a class="icone" href="/api/platforms"><i class="fab fa-playstation fa-4x"></i></a>
+      <hr>
+      <h4>Games Platforms</h4>
+    </div>
+    <div class="col-sm">
+      <a class="icone" href="/api/genres"><i class="fas fa-venus-mars fa-4x"></i></a>
+      <hr>
+      <h4>Games Genres</h4>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <a class="icone" href="/api/directors"><i class="fas fa-palette fa-4x"></i></a>
+      <hr>
+      <h4>List of Games Directors</h4>
+    </div>
+    <div class="col-sm">
+      <a class="icone" href="/api/screenshots"><i class="fas fa-desktop fa-4x"></i></a>
+      <hr>
+      <h4>Games Screenshots Resources</h4>
+    </div>
+  </div>
+</div>
+{% include '_footer.html' %}
 {% endblock content %}
 

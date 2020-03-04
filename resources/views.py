@@ -1,12 +1,18 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import Game, Director, Genre, Platform
+from .models import Game, Director, Genre, Platform, Screenshot
 from .serializers import (
+	ScreenshotSerializer,
 	GenreSerializer,
 	DirectorSerializer,
 	PlatformSerializer,
 	GameSerializer
 )
+
+class ScreenshotViewSet(viewsets.ReadOnlyModelViewSet):
+	queryset = Screenshot.objects.all()
+	serializer_class = ScreenshotSerializer
+	search_fields = ('name',)
 
 class GenreViewSet(viewsets.ReadOnlyModelViewSet):
 	queryset = Genre.objects.all()
