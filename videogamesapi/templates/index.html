@@ -1,5 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div id="app">
 	<h1>Video Games API</h1>
+</div>
 {% endblock content %}
+
+{% block script %}
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script type="text/javascript">
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Video Games API')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('Inspired by the <a href="https://swapi.co">Glorious Star Wars API</a>')
+    .pauseFor(2800)
+    .deleteAll()
+    .typeString('Powered by <a href="https://www.django-rest-framework.org">Django</a>')
+    .pauseFor(2200)
+    .start();
+</script>
+{% endblock script %}
