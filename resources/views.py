@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import viewsets
+from rest_framework import viewsets, filters
 from .models import Game, Director, Genre, Platform, Screenshot
 from .serializers import (
 	ScreenshotSerializer,
@@ -10,26 +10,31 @@ from .serializers import (
 )
 
 class ScreenshotViewSet(viewsets.ReadOnlyModelViewSet):
-	queryset = Screenshot.objects.all()
+	queryset = Screenshot.objects.order_by('id')
 	serializer_class = ScreenshotSerializer
-	search_fields = ('name',)
+	filter_backends = [filters.SearchFilter]
+	search_fields = ['name']
 
 class GenreViewSet(viewsets.ReadOnlyModelViewSet):
-	queryset = Genre.objects.all()
+	queryset = Genre.objects.order_by('id')
 	serializer_class = GenreSerializer
-	search_fields = ('name',)
+	filter_backends = [filters.SearchFilter]
+	search_fields = ['name']
 
 class DirectorViewSet(viewsets.ReadOnlyModelViewSet):
-	queryset = Director.objects.all()
+	queryset = Director.objects.order_by('id')
 	serializer_class = DirectorSerializer
-	search_fields = ('name',)
+	filter_backends = [filters.SearchFilter]
+	search_fields = ['name']
 
 class PlatformViewSet(viewsets.ReadOnlyModelViewSet):
-	queryset = Platform.objects.all()
+	queryset = Platform.objects.order_by('id')
 	serializer_class = PlatformSerializer
-	search_fields = ('name',)
+	filter_backends = [filters.SearchFilter]
+	search_fields = ['name']
 
 class GameViewSet(viewsets.ReadOnlyModelViewSet):
-	queryset = Game.objects.all()
+	queryset = Game.objects.order_by('id')
 	serializer_class = GameSerializer
-	search_fields = ('title',)
+	filter_backends = [filters.SearchFilter]
+	search_fields = ['title']

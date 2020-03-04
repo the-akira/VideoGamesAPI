@@ -3,7 +3,7 @@ from .models import Game, Director, Genre, Platform, Screenshot
 
 class ScreenshotSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Genre 
+        model = Screenshot
         fields = ['game','screenshot_1','screenshot_2','screenshot_3','screenshot_4']
 
 class GenreSerializer(serializers.HyperlinkedModelSerializer):

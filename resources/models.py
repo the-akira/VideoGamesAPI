@@ -24,7 +24,7 @@ class Genre(DateTimeModel):
 
 class Platform(DateTimeModel):
     """Model representing a game platform"""
-    name = models.CharField(max_length=200, primary_key=True)
+    name = models.CharField(max_length=200)
     developer = models.CharField(max_length=200)
 
     GEN_STATUS = (
@@ -69,7 +69,7 @@ class Director(DateTimeModel):
 
 class Game(DateTimeModel):
     """Game model"""
-    title = models.CharField(max_length=250, primary_key=True)
+    title = models.CharField(max_length=250)
     description = models.TextField(max_length=1000, help_text='Enter a brief description of the game')
     cover = models.CharField(max_length=500, default="")
     developer = models.CharField(max_length=150, default="")
@@ -90,7 +90,3 @@ class Screenshot(DateTimeModel):
     screenshot_2 = models.CharField(max_length=500)
     screenshot_3 = models.CharField(max_length=500)
     screenshot_4 = models.CharField(max_length=500)
-
-    def __str__(self):
-        """String for representing the Model object."""
-        return self.name
