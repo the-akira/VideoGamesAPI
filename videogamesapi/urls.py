@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.urls import include, path
-from django.conf.urls import url
 from videogamesapi import views
 from resources import views as resources_views
 from rest_framework import routers
@@ -15,5 +14,7 @@ router.register(r'games', resources_views.GameViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('about/', views.about, name='about'),
+    path('documentation/', views.documentation, name='documentation'),
 ]

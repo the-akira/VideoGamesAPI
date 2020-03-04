@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include '_nav.html' %}
+<header class="header">
+    <img class="avatar" src="https://i.ibb.co/xS7m8p1/ee03f76ed0711b770c0c797d83bd2ea0-gaming-controller-icon-by-vexels-1-4.png">
+    <div id="app">
+    	<h1>Video Games API</h1>
+    </div>
+</header>
+{% endblock header %}
+
+{% block script %}
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script type="text/javascript">
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Video Games API')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('Inspired by: <a href="https://swapi.co">Star Wars API</a>')
+    .pauseFor(2800)
+    .deleteAll()
+    .typeString('Powered by: <a href="https://www.django-rest-framework.org">Django</a>')
+    .pauseFor(2200)
+    .start();
+</script>
+{% endblock script %}

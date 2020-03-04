@@ -9,8 +9,13 @@ body {
 	margin-top: 20px;
 }
 
+.navbar{
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.7);
+	border: 1px solid white;
+}
+
 .navbar > li{
-  margin: 0px 15px 0px 8px;
+  margin: 8px 15px 8px 8px;
   font-size: 1.2rem;
 }
 
@@ -30,21 +35,53 @@ body {
 .Typewriter__wrapper{
 	font-family: 'Press Start 2P', cursive;
 	font-size: 2.3rem;
-	background: -webkit-linear-gradient(#49277e,#a09fd8);
+	font-weight: bold;
+/*	background: -webkit-linear-gradient(#49277e,#a09fd8);
 	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
+	-webkit-background-clip: text;*/
+	color: #390459;
 }
 
 .Typewriter__wrapper > a{
 	font-family: 'Press Start 2P', cursive;
 	text-decoration: underline;
-	font-size: 2.5rem;
-	background: -webkit-linear-gradient(#a09fd8,#49277e);
+	font-size: 2.35rem;
+/*	background: -webkit-linear-gradient(#a09fd8,#49277e);
 	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	color: #a09fd8;
+	-webkit-background-clip: text;*/
+	color: #3c3c42;
 }
 
 .swapi{
 	color: white;
+}
+
+.avatar{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+	width: 175px;
+	height: 85px;	
+}
+
+li{
+	list-style-type: none;
+}
+
+.b1{
+	color: #ff280f;
+	font-family: 'Press Start 2P', cursive;
+	font-weight: bold;
+	font-size: 1.067rem;
+	margin-right: 10px;
+	text-decoration: underline;
+}
+
+.header{
+	margin-top: 50px;
+	border: 1px solid white;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.7);
+	padding-bottom: 30px;
+	background-color: #a09fd8;
 }

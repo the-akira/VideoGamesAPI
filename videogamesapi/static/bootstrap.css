@@ -1,16 +1,3 @@
-/*!
- * Bootswatch v4.4.1
- * Homepage: https://bootswatch.com
- * Copyright 2012-2020 Thomas Park
- * Licensed under MIT
- * Based on Bootstrap
-*/
-/*!
- * Bootstrap v4.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 :root {
   --blue: #DF691A;
@@ -11064,4 +11051,13 @@ body{
 
 p, h1{
   color: #a09fd8;
+}
+
+.breadcrumb > li:first-child {
+  margin-right: 10px;
+}
+
+.navbar-text{
+  color: #a09fd8;
+  font-size: 1.3rem;
 }
