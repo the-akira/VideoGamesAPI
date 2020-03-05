@@ -6,8 +6,9 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-		<h1>Introduction</h1>
+		<h1 class="doc-title">Introduction</h1>
 		<hr>
+		<p class="docs">Welcome to the <b>Video Games API</b></p>
 		<p class="docs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		<h1 class="title">Experiment with AJAX</h1>
 		<br>
@@ -21,7 +22,7 @@
 		    </button>
 		  </div>
 		</div>
-		<small class="hint">You can also try to make a request for <b>platforms/1</b> or <b>genres/</b> or <b>screenshots/</b> or maybe <b>directors/?page=2</b></small>
+		<small class="hint">You can also try to make a request for <b>platforms/1</b> or <b>genres/</b> or search <b>games/?search=castlevania</b> or maybe paginate <b>directors/?page=2</b></small>
 		<br>
 		<div class="well">
 			<pre id="output" class="scrollable">
@@ -80,9 +81,9 @@ function XMLRequest(){
 	if(input == ''){
 		input = 'games/1/';
 	}
-	var api_url = `/api/${input}`;
+	var apiUrl = `/api/${input}`;
 	var xhr = new XMLHttpRequest();
-	xhr.open("GET", api_url, true);
+	xhr.open("GET", apiUrl, true);
 	xhr.onload = function (e) {
 	  if (xhr.readyState === 4) {
 	    if (xhr.status === 200) {

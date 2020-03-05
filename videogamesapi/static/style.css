@@ -30,7 +30,7 @@ body {
 
 #app{
 	text-align: center;
-	margin: 50px 6px 12px 10px;	
+	margin: 40px 6px 12px 10px;	
 }
 
 .Typewriter__wrapper{
@@ -58,8 +58,19 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 35px;
-	width: 175px;
-	height: 85px;	
+	width: 185px;
+	height: 95px;	
+	border: 2px solid #1e2924;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.7);
+	padding: 10px;
+	border-radius: 7px;
+	transition: all 0.5s ease-in-out 0s;
+}
+
+.avatar:hover{
+    transform: rotate(420deg);
+    transition: all 0.7s ease-in-out 0s;	
+    cursor: pointer;
 }
 
 li{
@@ -266,4 +277,8 @@ b{
 
 b:hover{
 	background-color: black;
+}
+
+.doc-title{
+	text-shadow: 2px 2px 2px #9400ff, 3px 3px 3px #201e24;
 }
