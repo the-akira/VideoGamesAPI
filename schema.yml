@@ -1,0 +1,541 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /api/games/:
+    get:
+      operationId: listGames
+      description: ''
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                  previous:
+                    type: string
+                    nullable: true
+                  results:
+                    type: array
+                    items:
+                      properties:
+                        title:
+                          type: string
+                          maxLength: 250
+                        description:
+                          type: string
+                          description: Enter a brief description of the game
+                          maxLength: 1000
+                        cover:
+                          type: string
+                          maxLength: 500
+                        developer:
+                          type: string
+                          maxLength: 150
+                        publisher:
+                          type: string
+                          maxLength: 150
+                        director:
+                          type: array
+                          items:
+                            type: string
+                          readOnly: true
+                        genre:
+                          type: array
+                          items:
+                            type: string
+                          readOnly: true
+                        platform:
+                          type: array
+                          items:
+                            type: string
+                          readOnly: true
+                        release_date:
+                          type: string
+                          format: date
+                          nullable: true
+                      required:
+                      - title
+                      - description
+          description: ''
+  /api/games/{id}/:
+    get:
+      operationId: retrieveGame
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this game.
+        schema:
+          type: string
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  title:
+                    type: string
+                    maxLength: 250
+                  description:
+                    type: string
+                    description: Enter a brief description of the game
+                    maxLength: 1000
+                  cover:
+                    type: string
+                    maxLength: 500
+                  developer:
+                    type: string
+                    maxLength: 150
+                  publisher:
+                    type: string
+                    maxLength: 150
+                  director:
+                    type: array
+                    items:
+                      type: string
+                    readOnly: true
+                  genre:
+                    type: array
+                    items:
+                      type: string
+                    readOnly: true
+                  platform:
+                    type: array
+                    items:
+                      type: string
+                    readOnly: true
+                  release_date:
+                    type: string
+                    format: date
+                    nullable: true
+                required:
+                - title
+                - description
+          description: ''
+  /api/platforms/:
+    get:
+      operationId: listPlatforms
+      description: ''
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                  previous:
+                    type: string
+                    nullable: true
+                  results:
+                    type: array
+                    items:
+                      properties:
+                        name:
+                          type: string
+                          maxLength: 200
+                        developer:
+                          type: string
+                          maxLength: 200
+                        generation:
+                          enum:
+                          - 1st
+                          - 2nd
+                          - 3rd
+                          - 4th
+                          - 5th
+                          - 6th
+                          - 7th
+                          - 8th
+                          - 9th
+                          description: Video Game Generation
+                        media:
+                          type: string
+                          maxLength: 100
+                        cpu:
+                          type: string
+                          maxLength: 100
+                        release_date:
+                          type: string
+                          format: date
+                          nullable: true
+                      required:
+                      - name
+                      - developer
+                      - generation
+                      - media
+                      - cpu
+          description: ''
+  /api/platforms/{id}/:
+    get:
+      operationId: retrievePlatform
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this platform.
+        schema:
+          type: string
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  name:
+                    type: string
+                    maxLength: 200
+                  developer:
+                    type: string
+                    maxLength: 200
+                  generation:
+                    enum:
+                    - 1st
+                    - 2nd
+                    - 3rd
+                    - 4th
+                    - 5th
+                    - 6th
+                    - 7th
+                    - 8th
+                    - 9th
+                    description: Video Game Generation
+                  media:
+                    type: string
+                    maxLength: 100
+                  cpu:
+                    type: string
+                    maxLength: 100
+                  release_date:
+                    type: string
+                    format: date
+                    nullable: true
+                required:
+                - name
+                - developer
+                - generation
+                - media
+                - cpu
+          description: ''
+  /api/screenshots/:
+    get:
+      operationId: listScreenshots
+      description: ''
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                  previous:
+                    type: string
+                    nullable: true
+                  results:
+                    type: array
+                    items:
+                      properties:
+                        game:
+                          type: string
+                        screenshot_1:
+                          type: string
+                          maxLength: 500
+                        screenshot_2:
+                          type: string
+                          maxLength: 500
+                        screenshot_3:
+                          type: string
+                          maxLength: 500
+                        screenshot_4:
+                          type: string
+                          maxLength: 500
+                      required:
+                      - game
+                      - screenshot_1
+                      - screenshot_2
+                      - screenshot_3
+                      - screenshot_4
+          description: ''
+  /api/screenshots/{id}/:
+    get:
+      operationId: retrieveScreenshot
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this screenshot.
+        schema:
+          type: string
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  game:
+                    type: string
+                  screenshot_1:
+                    type: string
+                    maxLength: 500
+                  screenshot_2:
+                    type: string
+                    maxLength: 500
+                  screenshot_3:
+                    type: string
+                    maxLength: 500
+                  screenshot_4:
+                    type: string
+                    maxLength: 500
+                required:
+                - game
+                - screenshot_1
+                - screenshot_2
+                - screenshot_3
+                - screenshot_4
+          description: ''
+  /api/directors/:
+    get:
+      operationId: listDirectors
+      description: ''
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                  previous:
+                    type: string
+                    nullable: true
+                  results:
+                    type: array
+                    items:
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                          description: Unique ID for this particular genre
+                        name:
+                          type: string
+                          maxLength: 200
+                        born_country:
+                          type: string
+                          maxLength: 150
+                      required:
+                      - name
+          description: ''
+  /api/directors/{id}/:
+    get:
+      operationId: retrieveDirector
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: Unique ID for this particular genre
+        schema:
+          type: string
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  id:
+                    type: string
+                    format: uuid
+                    description: Unique ID for this particular genre
+                  name:
+                    type: string
+                    maxLength: 200
+                  born_country:
+                    type: string
+                    maxLength: 150
+                required:
+                - name
+          description: ''
+  /api/genres/:
+    get:
+      operationId: listGenres
+      description: ''
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                  previous:
+                    type: string
+                    nullable: true
+                  results:
+                    type: array
+                    items:
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                          description: Unique ID for this particular genre
+                        name:
+                          type: string
+                          maxLength: 200
+                      required:
+                      - name
+          description: ''
+  /api/genres/{id}/:
+    get:
+      operationId: retrieveGenre
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: Unique ID for this particular genre
+        schema:
+          type: string
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  id:
+                    type: string
+                    format: uuid
+                    description: Unique ID for this particular genre
+                  name:
+                    type: string
+                    maxLength: 200
+                required:
+                - name
+          description: ''
