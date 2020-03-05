@@ -37,20 +37,14 @@ body {
 	font-family: 'Press Start 2P', cursive;
 	font-size: 2.3rem;
 	font-weight: bold;
-/*	background: -webkit-linear-gradient(#49277e,#a09fd8);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;*/
 	color: black;
-	text-shadow: 3px 3px 3px #9400ff, 5px 5px 5px #9400ff;
+	text-shadow: 2px 2px 2px #9400ff, 2px 2px 2px #3c3c42;
 }
 
 .Typewriter__wrapper > a{
 	font-family: 'Press Start 2P', cursive;
 	text-decoration: underline;
 	font-size: 2.35rem;
-/*	background: -webkit-linear-gradient(#a09fd8,#49277e);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;*/
 	color: #9400ff;
 	text-shadow: 3px 3px 3px black, 5px 5px 5px black;
 }
@@ -255,4 +249,21 @@ pre{
 	color: black;
 	border-radius: 5px;
 	box-shadow: 2px 2px 2px 2px rgba(0.3,0.3,0.3,.8);	
+}
+
+.hint{
+	display: block;
+	font-size: 0.88rem;
+}
+
+b{
+	background-color: #201e24;
+	padding: 3.8px;
+	border-radius: 3px;
+	border: 0.7px solid #9400ff;
+	display: inline-block;
+}
+
+b:hover{
+	background-color: black;
 }

@@ -34,11 +34,7 @@
 	    .start();
 	</script>
 	<script src="{% static 'particles.js' %}"></script>
-	<script type="text/javascript">
-	particlesJS.load('particles-js', 'static/particlesjs-config.json', function() {
-	  console.log('callback - particles.js config loaded');
-	});
-	</script>
+	<script src="{% static 'load-particles.js' %}"></script>
 	{% block scripts %}{% endblock scripts %}
 </body>
 </html>
