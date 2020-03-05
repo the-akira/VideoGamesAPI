@@ -10,10 +10,27 @@
 	<title>Video Games API</title>
 </head>
 <body>
-	{% block header %}{% endblock header %}
 	<div class="container">
 		{% block content %}{% endblock content %}
 	</div>
-	{% block script %}{% endblock script %}
+
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+	<script type="text/javascript">
+	var app = document.getElementById('app');
+
+	var typewriter = new Typewriter(app, {
+	    loop: true
+	});
+
+	typewriter.typeString('Video Games API')
+	    .pauseFor(1500)
+	    .deleteAll()
+	    .typeString('Inspired by <a href="https://swapi.co">Star Wars API</a>')
+	    .pauseFor(2800)
+	    .deleteAll()
+	    .typeString('Powered by <a href="https://www.django-rest-framework.org">Django</a>')
+	    .pauseFor(2200)
+	    .start();
+	</script>
 </body>
 </html>
