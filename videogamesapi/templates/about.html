@@ -13,16 +13,17 @@
 		<br>
 		<div class="input-group mb-3">
 		  <div class="input-group-append">
-		    <label class="input-group-text">https://videogamesapi.herokuapp.com</label>
+		    <label class="input-group-text">https://videogamesapi.herokuapp.com/api/</label>
 		  </div>
-		  <input type="text" class="form-control" placeholder="games/1/" aria-label="Recipient's username" aria-describedby="basic-addon2">
+		  <input id="inputdata" type="text" class="form-control" placeholder="games/1/" aria-label="Recipient's username" aria-describedby="basic-addon2">
 		  <div class="input-group-append">
-		    <button class="btn" type="button">Get Data</button>
+		    <button onClick="XMLRequest(); return false;" class="btn" type="button">Get Data
+		    </button>
 		  </div>
 		</div>
 		<br>
 		<div class="well">
-			<pre id="#output" class="scrollable">
+			<pre id="output" class="scrollable">
 {
     "count": 10,
     "next": "http://127.0.0.1:8000/api/genres/?page=2",
@@ -69,3 +70,32 @@
 </div>
 {% include '_footer.html' %}
 {% endblock content %}
+
+{% block scripts %}
+<script type="text/javascript">
+function XMLRequest(){
+	var input = document.getElementById('inputdata').value;
+	var output = document.getElementById('output');
+	if(input == ''){
+		input = 'games/1/';
+	}
+	var api_url = `/api/${input}`;
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", api_url, true);
+	xhr.onload = function (e) {
+	  if (xhr.readyState === 4) {
+	    if (xhr.status === 200) {
+	      var data = JSON.parse(xhr.responseText);
+	      output.innerHTML = JSON.stringify(data, null, 3);
+	    } else {
+	      output.innerHTML = `Error ${xhr.statusText}`;
+	    }
+	  }
+	};
+	xhr.onerror = function (e) {
+	  console.error(xhr.statusText);
+	};
+	xhr.send(null);
+}
+</script>
+{% endblock scripts %}
