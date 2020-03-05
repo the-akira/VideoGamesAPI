@@ -10,6 +10,7 @@
 	<title>Video Games API</title>
 </head>
 <body>
+	<div id="particles-js"></div>
 	<div class="container">
 		{% block content %}{% endblock content %}
 	</div>
@@ -31,6 +32,12 @@
 	    .typeString('Powered by <a href="https://www.django-rest-framework.org">Django</a>')
 	    .pauseFor(2200)
 	    .start();
+	</script>
+	<script src="{% static 'particles.js' %}"></script>
+	<script type="text/javascript">
+	particlesJS.load('particles-js', 'static/particlesjs-config.json', function() {
+	  console.log('callback - particles.js config loaded');
+	});
 	</script>
 </body>
 </html>
