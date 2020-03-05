@@ -2,5 +2,70 @@
 
 {% block content %}
 {% include '_header.html' %}
+<h1 class="title">About</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+		<h1>Introduction</h1>
+		<hr>
+		<p class="docs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<h1 class="title">Experiment</h1>
+		<br>
+		<div class="input-group mb-3">
+		  <div class="input-group-append">
+		    <label class="input-group-text">https://videogamesapi.herokuapp.com</label>
+		  </div>
+		  <input type="text" class="form-control" placeholder="games/1/" aria-label="Recipient's username" aria-describedby="basic-addon2">
+		  <div class="input-group-append">
+		    <button class="btn" type="button">Get Data</button>
+		  </div>
+		</div>
+		<br>
+		<div class="well">
+			<pre id="#output" class="scrollable">
+{
+    "count": 10,
+    "next": "http://127.0.0.1:8000/api/genres/?page=2",
+    "previous": null,
+    "results": [
+        {
+            "id": "3779efa4-860a-49a7-8e07-416d26e26330",
+            "name": "Battle Royale"
+        },
+        {
+            "id": "40f8c069-4c10-4ea8-9592-3ea6fd0c72e7",
+            "name": "Rhythm games"
+        },
+        {
+            "id": "61df466f-cf70-40d8-b1d3-72331bea9b55",
+            "name": "Metroidvania"
+        },
+        {
+            "id": "89d3c6f0-9a50-4275-80bf-06c60777e354",
+            "name": "Shooter games"
+        },
+        {
+            "id": "9f60e5b6-32a1-4bf9-94c1-f339aebaad76",
+            "name": "Platform games"
+        },
+        {
+            "id": "b723354e-6158-4cb8-93f1-8bd28bf7184f",
+            "name": "Stealth game"
+        },
+        {
+            "id": "c6879c13-57f8-4b86-832f-96bd9019c66a",
+            "name": "Survival horror"
+        },
+        {
+            "id": "f3651849-f33e-40d3-8a11-567496a629f8",
+            "name": "Fighting games"
+        }
+    ]
+}
+			</pre>		
+		</div>
+	</div>
+  </div>
+</div>
 {% include '_footer.html' %}
 {% endblock content %}
