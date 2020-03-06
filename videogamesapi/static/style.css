@@ -279,6 +279,14 @@ b:hover{
 	background-color: black;
 }
 
-.doc-title{
+.doc-title, .docs-subtitle{
 	text-shadow: 2px 2px 2px #9400ff, 3px 3px 3px #201e24;
+}
+
+a{
+	color: #9400ff;
+}
+
+a:hover{
+	color: #9400ff;
 }
