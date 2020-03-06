@@ -1,0 +1,324 @@
+[
+{
+    "model": "resources.platform",
+    "pk": 2,
+    "fields": {
+        "created": "2020-03-06T00:03:04.593Z",
+        "edited": "2020-03-06T00:03:04.593Z",
+        "name": "Super Nintendo Entertainment System (SNES)",
+        "developer": "Nintendo R&D2",
+        "generation": "4th",
+        "media": "ROM cartridge",
+        "cpu": "Ricoh 5A22 @ 3.58 MHz",
+        "release_date": "1990-11-21"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 3,
+    "fields": {
+        "created": "2020-03-06T00:03:54.099Z",
+        "edited": "2020-03-06T00:03:54.099Z",
+        "name": "Sega Genesis",
+        "developer": "Sega",
+        "generation": "4th",
+        "media": "ROM cartridge",
+        "cpu": "Motorola 68000 @ 7.6 MHz",
+        "release_date": "1988-10-29"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 4,
+    "fields": {
+        "created": "2020-03-06T00:06:23.807Z",
+        "edited": "2020-03-06T00:06:23.807Z",
+        "name": "PlayStation",
+        "developer": "Sony",
+        "generation": "5th",
+        "media": "CD-ROM",
+        "cpu": "R3000 @ 33.8688 MHz",
+        "release_date": "1994-12-03"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 5,
+    "fields": {
+        "created": "2020-03-06T00:07:24.914Z",
+        "edited": "2020-03-06T00:07:24.914Z",
+        "name": "Sega Saturn",
+        "developer": "Sega",
+        "generation": "5th",
+        "media": "CD-ROM",
+        "cpu": "2\u00d7 Hitachi SH-2 @ 28.6 MHz",
+        "release_date": "1994-11-22"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 6,
+    "fields": {
+        "created": "2020-03-06T00:08:06.921Z",
+        "edited": "2020-03-06T00:08:06.921Z",
+        "name": "Dreamcast",
+        "developer": "Sega",
+        "generation": "6th",
+        "media": "CD-ROM",
+        "cpu": "Hitachi SH-4 32-bit RISC @ 200 MHz",
+        "release_date": "1998-11-27"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 7,
+    "fields": {
+        "created": "2020-03-06T00:08:54.975Z",
+        "edited": "2020-03-06T00:08:54.975Z",
+        "name": "Atari 2600",
+        "developer": "Atari, Inc.",
+        "generation": "2nd",
+        "media": "ROM cartridge",
+        "cpu": "8-bit MOS Technology 6507 @ 1.19 MHz",
+        "release_date": "1977-09-11"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 8,
+    "fields": {
+        "created": "2020-03-06T00:09:39.115Z",
+        "edited": "2020-03-06T00:09:39.115Z",
+        "name": "Sega Master System (SMS)",
+        "developer": "Sega",
+        "generation": "3rd",
+        "media": "ROM cartridge",
+        "cpu": "Zilog Z80A @ 4 MHz",
+        "release_date": "1985-10-20"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 9,
+    "fields": {
+        "created": "2020-03-06T00:12:23.341Z",
+        "edited": "2020-03-06T00:12:23.341Z",
+        "name": "Nintendo Entertainment System (NES)",
+        "developer": "Nintendo R&D2",
+        "generation": "3rd",
+        "media": "ROM cartridge",
+        "cpu": "Ricoh 2A03 8-bit processor (MOS Technology 6502 core)",
+        "release_date": "1983-07-15"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 10,
+    "fields": {
+        "created": "2020-03-06T00:13:02.783Z",
+        "edited": "2020-03-06T00:13:02.783Z",
+        "name": "Atari 7800 ProSystem",
+        "developer": "Atari, Inc.",
+        "generation": "3rd",
+        "media": "ROM cartridge",
+        "cpu": "Atari SALLY 6502 (\"6502C\") clocked at 1.19-1.79MHz,",
+        "release_date": "1986-05-10"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 11,
+    "fields": {
+        "created": "2020-03-06T00:14:02.734Z",
+        "edited": "2020-03-06T00:14:02.734Z",
+        "name": "Neo Geo",
+        "developer": "SNK Corporation",
+        "generation": "4th",
+        "media": "ROM cartridge",
+        "cpu": "Motorola 68000 @ 12MHz, Zilog Z80A @ 4MHz",
+        "release_date": "1990-04-26"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 12,
+    "fields": {
+        "created": "2020-03-06T00:14:45.207Z",
+        "edited": "2020-03-06T00:14:45.207Z",
+        "name": "Nintendo 64",
+        "developer": "Nintendo R&D2",
+        "generation": "5th",
+        "media": "ROM cartridge",
+        "cpu": "64-bit NEC VR4300 @ 93.75 MHz",
+        "release_date": "1996-06-23"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 13,
+    "fields": {
+        "created": "2020-03-06T00:15:14.527Z",
+        "edited": "2020-03-06T00:15:14.527Z",
+        "name": "Atari Jaguar",
+        "developer": "Atari, Inc.",
+        "generation": "5th",
+        "media": "ROM cartridge",
+        "cpu": "Motorola 68000, 2 custom RISC processors",
+        "release_date": "1993-11-23"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 14,
+    "fields": {
+        "created": "2020-03-06T00:15:46.286Z",
+        "edited": "2020-03-06T00:15:46.286Z",
+        "name": "3DO Interactive Multiplayer",
+        "developer": "Matsushita Electric, Sanyo, GoldStar",
+        "generation": "5th",
+        "media": "CD-ROM",
+        "cpu": "32-bit RISC CPU ARM60 based on ARM architecture @ 12.5 MHz",
+        "release_date": "1993-10-04"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 15,
+    "fields": {
+        "created": "2020-03-06T00:16:56.000Z",
+        "edited": "2020-03-06T00:16:56.000Z",
+        "name": "PlayStation 2",
+        "developer": "Sony",
+        "generation": "6th",
+        "media": "CD-ROM",
+        "cpu": "Emotion Engine @ 300 MHz",
+        "release_date": "2000-03-04"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 16,
+    "fields": {
+        "created": "2020-03-06T00:17:34.816Z",
+        "edited": "2020-03-06T00:17:34.816Z",
+        "name": "Nintendo GameCube",
+        "developer": "Nintendo R&D2",
+        "generation": "6th",
+        "media": "CD-ROM",
+        "cpu": "IBM PowerPC Gekko @ 486 MHz",
+        "release_date": "2001-07-14"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 17,
+    "fields": {
+        "created": "2020-03-06T00:17:59.141Z",
+        "edited": "2020-03-06T00:17:59.142Z",
+        "name": "Xbox",
+        "developer": "Microsoft",
+        "generation": "6th",
+        "media": "CD-ROM",
+        "cpu": "Custom 733 MHz Intel Pentium III \"Coppermine-based\" processor",
+        "release_date": "2001-11-15"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 18,
+    "fields": {
+        "created": "2020-03-06T00:19:15.208Z",
+        "edited": "2020-03-06T00:19:15.208Z",
+        "name": "Xbox 360",
+        "developer": "Microsoft",
+        "generation": "7th",
+        "media": "DVD",
+        "cpu": "3.2 GHz PowerPC Tri-Core Xenon",
+        "release_date": "2005-11-22"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 19,
+    "fields": {
+        "created": "2020-03-06T00:20:10.138Z",
+        "edited": "2020-03-06T00:20:10.138Z",
+        "name": "PlayStation 3",
+        "developer": "Sony",
+        "generation": "7th",
+        "media": "Blu-ray Disc",
+        "cpu": "3.2 GHz Cell Broadband Engine with 1 PPE and 8 SPEs",
+        "release_date": "2006-11-11"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 20,
+    "fields": {
+        "created": "2020-03-06T00:20:54.507Z",
+        "edited": "2020-03-06T00:20:54.507Z",
+        "name": "Wii",
+        "developer": "Nintendo R&D2",
+        "generation": "7th",
+        "media": "DVD",
+        "cpu": "729 MHz IBM PowerPC \"Broadway\"",
+        "release_date": "2006-11-19"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 21,
+    "fields": {
+        "created": "2020-03-06T00:21:57.472Z",
+        "edited": "2020-03-06T00:21:57.472Z",
+        "name": "Wii U",
+        "developer": "Nintendo IRD, NTD",
+        "generation": "8th",
+        "media": "Physical and digital",
+        "cpu": "1.24 GHz Tri-Core IBM PowerPC \"Espresso\"",
+        "release_date": "2012-11-18"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 22,
+    "fields": {
+        "created": "2020-03-06T00:22:36.816Z",
+        "edited": "2020-03-06T00:22:36.816Z",
+        "name": "Nintendo Switch",
+        "developer": "Nintendo Platform Technology Development",
+        "generation": "8th",
+        "media": "Game Card Digital distribution",
+        "cpu": "Quad-core Cortex-A57 + quad-core Cortex-A53 @ 1.02 GHz",
+        "release_date": "2017-03-03"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 23,
+    "fields": {
+        "created": "2020-03-06T00:23:14.522Z",
+        "edited": "2020-03-06T00:23:14.522Z",
+        "name": "PlayStation 4",
+        "developer": "Sony",
+        "generation": "8th",
+        "media": "Blu-ray, DVD",
+        "cpu": "Semi-custom 8-core AMD x86-64 Jaguar 1.6 GHz CPU (2.13 GHz on PS4 Pro) (integrated into APU)",
+        "release_date": "2013-11-15"
+    }
+},
+{
+    "model": "resources.platform",
+    "pk": 24,
+    "fields": {
+        "created": "2020-03-06T00:24:02.876Z",
+        "edited": "2020-03-06T00:24:02.876Z",
+        "name": "Xbox One",
+        "developer": "Microsoft",
+        "generation": "8th",
+        "media": "Blu-ray, DVD, CD",
+        "cpu": "Custom 1.75 GHz AMD 8-core APU (2 quad-core Jaguar modules)",
+        "release_date": "2013-11-22"
+    }
+}
+]

@@ -1,0 +1,524 @@
+[
+{
+    "model": "resources.genre",
+    "pk": 1,
+    "fields": {
+        "created": "2020-03-05T21:45:24.982Z",
+        "edited": "2020-03-05T21:45:24.982Z",
+        "name": "Platform games"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 2,
+    "fields": {
+        "created": "2020-03-05T21:45:31.711Z",
+        "edited": "2020-03-05T21:45:31.711Z",
+        "name": "Shooter games"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 3,
+    "fields": {
+        "created": "2020-03-05T21:45:36.992Z",
+        "edited": "2020-03-05T21:45:36.992Z",
+        "name": "Fighting games"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 4,
+    "fields": {
+        "created": "2020-03-05T21:45:42.323Z",
+        "edited": "2020-03-05T21:45:42.323Z",
+        "name": "Beat 'em up games"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 5,
+    "fields": {
+        "created": "2020-03-05T21:45:46.985Z",
+        "edited": "2020-03-05T21:45:46.985Z",
+        "name": "Stealth game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 6,
+    "fields": {
+        "created": "2020-03-05T21:45:51.273Z",
+        "edited": "2020-03-05T21:45:51.273Z",
+        "name": "Survival games"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 7,
+    "fields": {
+        "created": "2020-03-05T21:45:54.992Z",
+        "edited": "2020-03-05T21:45:54.992Z",
+        "name": "Battle Royale"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 8,
+    "fields": {
+        "created": "2020-03-05T21:46:00.012Z",
+        "edited": "2020-03-05T21:46:00.012Z",
+        "name": "Rhythm games"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 9,
+    "fields": {
+        "created": "2020-03-05T21:46:06.915Z",
+        "edited": "2020-03-05T21:46:06.915Z",
+        "name": "Survival horror"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 10,
+    "fields": {
+        "created": "2020-03-05T21:46:11.267Z",
+        "edited": "2020-03-05T21:46:11.267Z",
+        "name": "Metroidvania"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 11,
+    "fields": {
+        "created": "2020-03-05T21:46:16.365Z",
+        "edited": "2020-03-05T21:46:16.365Z",
+        "name": "Text adventures"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 12,
+    "fields": {
+        "created": "2020-03-05T21:46:21.847Z",
+        "edited": "2020-03-05T21:46:21.847Z",
+        "name": "Graphic adventures"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 13,
+    "fields": {
+        "created": "2020-03-05T21:46:26.640Z",
+        "edited": "2020-03-05T21:46:26.640Z",
+        "name": "Visual novels"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 14,
+    "fields": {
+        "created": "2020-03-05T21:46:31.733Z",
+        "edited": "2020-03-05T21:46:31.733Z",
+        "name": "Interactive movie"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 15,
+    "fields": {
+        "created": "2020-03-05T21:46:36.324Z",
+        "edited": "2020-03-05T21:46:36.324Z",
+        "name": "Real-time 3D adventures"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 16,
+    "fields": {
+        "created": "2020-03-05T21:46:41.685Z",
+        "edited": "2020-03-05T21:46:41.685Z",
+        "name": "Action RPG"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 17,
+    "fields": {
+        "created": "2020-03-05T23:12:35.492Z",
+        "edited": "2020-03-05T23:12:35.492Z",
+        "name": "MMORPG"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 18,
+    "fields": {
+        "created": "2020-03-05T23:12:43.585Z",
+        "edited": "2020-03-05T23:12:43.585Z",
+        "name": "Roguelikes"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 19,
+    "fields": {
+        "created": "2020-03-05T23:12:48.876Z",
+        "edited": "2020-03-05T23:12:48.877Z",
+        "name": "Tactical RPG"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 20,
+    "fields": {
+        "created": "2020-03-05T23:12:53.490Z",
+        "edited": "2020-03-05T23:12:53.490Z",
+        "name": "Sandbox RPG"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 21,
+    "fields": {
+        "created": "2020-03-05T23:12:57.658Z",
+        "edited": "2020-03-05T23:12:57.658Z",
+        "name": "JRPG"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 22,
+    "fields": {
+        "created": "2020-03-05T23:13:02.998Z",
+        "edited": "2020-03-05T23:13:02.998Z",
+        "name": "First-person party-based RPG"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 23,
+    "fields": {
+        "created": "2020-03-05T23:13:09.242Z",
+        "edited": "2020-03-05T23:13:09.242Z",
+        "name": "Construction and management simulation"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 24,
+    "fields": {
+        "created": "2020-03-05T23:13:13.677Z",
+        "edited": "2020-03-05T23:13:13.677Z",
+        "name": "Life simulation"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 25,
+    "fields": {
+        "created": "2020-03-05T23:13:19.083Z",
+        "edited": "2020-03-05T23:13:19.083Z",
+        "name": "Vehicle simulation"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 26,
+    "fields": {
+        "created": "2020-03-05T23:13:26.957Z",
+        "edited": "2020-03-05T23:13:26.957Z",
+        "name": "4X game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 27,
+    "fields": {
+        "created": "2020-03-05T23:13:31.344Z",
+        "edited": "2020-03-05T23:13:31.344Z",
+        "name": "Artillery game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 28,
+    "fields": {
+        "created": "2020-03-05T23:46:26.541Z",
+        "edited": "2020-03-05T23:46:26.541Z",
+        "name": "Auto battler (Auto chess)"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 29,
+    "fields": {
+        "created": "2020-03-05T23:46:53.458Z",
+        "edited": "2020-03-05T23:46:53.458Z",
+        "name": "Multiplayer online battle arena (MOBA)"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 30,
+    "fields": {
+        "created": "2020-03-05T23:46:58.679Z",
+        "edited": "2020-03-05T23:46:58.679Z",
+        "name": "Real-time strategy (RTS)"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 31,
+    "fields": {
+        "created": "2020-03-05T23:47:03.002Z",
+        "edited": "2020-03-05T23:47:03.002Z",
+        "name": "Real-time tactics (RTT)"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 32,
+    "fields": {
+        "created": "2020-03-05T23:47:08.602Z",
+        "edited": "2020-03-05T23:47:08.602Z",
+        "name": "Tower defense"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 33,
+    "fields": {
+        "created": "2020-03-05T23:47:14.762Z",
+        "edited": "2020-03-05T23:47:14.762Z",
+        "name": "Turn-based strategy (TBS)"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 34,
+    "fields": {
+        "created": "2020-03-05T23:47:19.167Z",
+        "edited": "2020-03-05T23:47:19.167Z",
+        "name": "Turn-based tactics (TBT)"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 35,
+    "fields": {
+        "created": "2020-03-05T23:47:23.812Z",
+        "edited": "2020-03-05T23:47:23.812Z",
+        "name": "Wargame"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 36,
+    "fields": {
+        "created": "2020-03-05T23:47:28.147Z",
+        "edited": "2020-03-05T23:47:28.147Z",
+        "name": "Grand strategy wargame"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 37,
+    "fields": {
+        "created": "2020-03-05T23:47:32.398Z",
+        "edited": "2020-03-05T23:47:32.398Z",
+        "name": "Racing"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 38,
+    "fields": {
+        "created": "2020-03-05T23:47:36.697Z",
+        "edited": "2020-03-05T23:47:36.698Z",
+        "name": "Sports game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 39,
+    "fields": {
+        "created": "2020-03-05T23:47:40.260Z",
+        "edited": "2020-03-05T23:47:40.260Z",
+        "name": "Competitive"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 40,
+    "fields": {
+        "created": "2020-03-05T23:47:44.210Z",
+        "edited": "2020-03-05T23:47:44.211Z",
+        "name": "Sports-based fighting"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 41,
+    "fields": {
+        "created": "2020-03-05T23:47:48.957Z",
+        "edited": "2020-03-05T23:47:48.957Z",
+        "name": "Board game or card game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 42,
+    "fields": {
+        "created": "2020-03-05T23:47:53.123Z",
+        "edited": "2020-03-05T23:47:53.124Z",
+        "name": "Casual games"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 43,
+    "fields": {
+        "created": "2020-03-05T23:47:57.442Z",
+        "edited": "2020-03-05T23:47:57.442Z",
+        "name": "Digital collectible card game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 44,
+    "fields": {
+        "created": "2020-03-05T23:48:01.570Z",
+        "edited": "2020-03-05T23:48:01.570Z",
+        "name": "Logic game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 45,
+    "fields": {
+        "created": "2020-03-05T23:48:05.237Z",
+        "edited": "2020-03-05T23:48:05.237Z",
+        "name": "MMO"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 46,
+    "fields": {
+        "created": "2020-03-05T23:48:09.400Z",
+        "edited": "2020-03-05T23:48:09.400Z",
+        "name": "Mobile game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 47,
+    "fields": {
+        "created": "2020-03-05T23:48:13.443Z",
+        "edited": "2020-03-05T23:48:13.443Z",
+        "name": "Party game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 48,
+    "fields": {
+        "created": "2020-03-05T23:48:18.079Z",
+        "edited": "2020-03-05T23:48:18.079Z",
+        "name": "Programming game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 49,
+    "fields": {
+        "created": "2020-03-05T23:48:23.468Z",
+        "edited": "2020-03-05T23:48:23.468Z",
+        "name": "Trivia game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 50,
+    "fields": {
+        "created": "2020-03-05T23:48:27.465Z",
+        "edited": "2020-03-05T23:48:27.465Z",
+        "name": "Advergame"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 51,
+    "fields": {
+        "created": "2020-03-05T23:48:31.227Z",
+        "edited": "2020-03-05T23:48:31.227Z",
+        "name": "Art game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 52,
+    "fields": {
+        "created": "2020-03-05T23:48:35.330Z",
+        "edited": "2020-03-05T23:48:35.331Z",
+        "name": "Casual game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 53,
+    "fields": {
+        "created": "2020-03-05T23:48:39.040Z",
+        "edited": "2020-03-05T23:48:39.040Z",
+        "name": "Christian game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 54,
+    "fields": {
+        "created": "2020-03-05T23:48:42.662Z",
+        "edited": "2020-03-05T23:48:42.662Z",
+        "name": "Educational game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 55,
+    "fields": {
+        "created": "2020-03-05T23:48:45.855Z",
+        "edited": "2020-03-05T23:48:45.855Z",
+        "name": "Esports"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 56,
+    "fields": {
+        "created": "2020-03-05T23:48:49.731Z",
+        "edited": "2020-03-05T23:48:49.731Z",
+        "name": "Exergame"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 57,
+    "fields": {
+        "created": "2020-03-05T23:48:53.064Z",
+        "edited": "2020-03-05T23:48:53.065Z",
+        "name": "Personalized game"
+    }
+},
+{
+    "model": "resources.genre",
+    "pk": 58,
+    "fields": {
+        "created": "2020-03-05T23:48:57.320Z",
+        "edited": "2020-03-05T23:48:57.320Z",
+        "name": "Serious game"
+    }
+}
+]

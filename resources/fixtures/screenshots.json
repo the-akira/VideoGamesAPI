@@ -1,0 +1,41 @@
+[
+{
+    "model": "resources.screenshot",
+    "pk": "9578582c-74a2-49ce-b01c-559e957095d2",
+    "fields": {
+        "created": "2020-03-06T00:39:24.922Z",
+        "edited": "2020-03-06T00:39:24.922Z",
+        "game": 5,
+        "screenshot_1": "https://http2.mlstatic.com/cartucho-super-castlevania-iv-4-super-nintendo-snes-jogo-D_NQ_NP_893674-MLB26434479134_112017-F.jpg",
+        "screenshot_2": "https://i.pinimg.com/564x/56/87/08/568708ddf3733e748b931e7cf8828798.jpg",
+        "screenshot_3": "https://http2.mlstatic.com/jogo-super-castlevania-iv-4-super-nintendo-snes-dracula-novo-D_NQ_NP_834988-MLB26434471341_112017-F.jpg",
+        "screenshot_4": "https://s.uvlist.net/163400/screenshot/Super%20Castlevania%20IV%20(Super%20Nintendo).jpg"
+    }
+},
+{
+    "model": "resources.screenshot",
+    "pk": "c3ee3ac9-d062-4ff6-a03b-c9317e74ba40",
+    "fields": {
+        "created": "2020-03-06T00:38:17.433Z",
+        "edited": "2020-03-06T00:38:17.433Z",
+        "game": 4,
+        "screenshot_1": "https://gamefabrique.com/storage/screenshots/snes/super-mario-world-05.png",
+        "screenshot_2": "https://i.pinimg.com/originals/41/ac/f4/41acf4c30be4ac15d8920652e3d624cb.jpg",
+        "screenshot_3": "https://m.media-amazon.com/images/M/MV5BZGZhYjczYzAtNDllNi00NzQxLTk3NzMtZTM3YmNlOTJiZDMxXkEyXkFqcGdeQXVyOTI2NzQwOTY@._V1_.jpg",
+        "screenshot_4": "https://media.giphy.com/media/ScdNPkEdgfFuM/giphy.gif"
+    }
+},
+{
+    "model": "resources.screenshot",
+    "pk": "efbabf52-1875-4418-8121-fc0d4290113a",
+    "fields": {
+        "created": "2020-03-06T00:34:26.949Z",
+        "edited": "2020-03-06T00:34:26.949Z",
+        "game": 3,
+        "screenshot_1": "https://cdn.vox-cdn.com/thumbor/ICTMX_-WqGd43Zj2Cns9AXMPW_g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/66432809/ESPmgPVU4AAWAu7.0.jpeg",
+        "screenshot_2": "https://www.droid-life.com/wp-content/uploads/2020/03/Castlevania-980x550.jpg",
+        "screenshot_3": "https://cdn.cultofmac.com/wp-content/uploads/2020/03/Castlevania-Symphony-of-the-Night.jpg",
+        "screenshot_4": "https://www.mobygames.com/images/shots/l/273154-castlevania-symphony-of-the-night-playstation-screenshot-in.jpg"
+    }
+}
+]

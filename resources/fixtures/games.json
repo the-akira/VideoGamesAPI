@@ -1,0 +1,74 @@
+[
+{
+    "model": "resources.game",
+    "pk": 3,
+    "fields": {
+        "created": "2020-03-06T00:29:03.611Z",
+        "edited": "2020-03-06T00:29:03.611Z",
+        "title": "Castlevania: Symphony of the Night",
+        "description": "Castlevania: Symphony of the Night is a platform-adventure action role-playing game developed and published by Konami in 1997 for the PlayStation. It was directed and produced by Toru Hagihara, with Koji Igarashi acting as assistant director. It is the direct sequel to Castlevania: Rondo of Blood, taking place four years later, and is the 10th entry into the Castlevania Series. It features Dracula's dhampir son Alucard as the protagonist, rising from his slumber to explore Dracula's castle which has re-appeared after Richter Belmont vanished. It marks a break from previous games in the series, introducing exploration, non-linear level design and role-playing elements.",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/c/cf/Castlevania_SOTN_PAL.jpg",
+        "developer": "Konami Computer Entertainment Tokyo",
+        "publisher": "Konami",
+        "release_date": "1997-03-20",
+        "director": [
+            7
+        ],
+        "genre": [
+            1,
+            10,
+            16
+        ],
+        "platform": [
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "resources.game",
+    "pk": 4,
+    "fields": {
+        "created": "2020-03-06T00:30:52.735Z",
+        "edited": "2020-03-06T00:30:52.735Z",
+        "title": "Super Mario World",
+        "description": "Super Mario World is a 1990 side-scrolling platform game developed and published by Nintendo for the Super Nintendo Entertainment System (SNES). The story follows Mario's quest to save Princess Toadstool and Dinosaur Land from the series antagonist Bowser and his minions, the Koopalings. The gameplay is similar to that of earlier Super Mario games: Players control Mario or his brother Luigi through a series of levels in which the goal is to reach the flagpole at the end. Super Mario World introduced Yoshi, a dinosaur who can eat enemies and gain abilities by eating the shells of Koopa Troopas.",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/3/32/Super_Mario_World_Coverart.png",
+        "developer": "Nintendo EAD",
+        "publisher": "Nintendo",
+        "release_date": "1990-11-21",
+        "director": [
+            13
+        ],
+        "genre": [
+            1
+        ],
+        "platform": [
+            2
+        ]
+    }
+},
+{
+    "model": "resources.game",
+    "pk": 5,
+    "fields": {
+        "created": "2020-03-06T00:32:35.127Z",
+        "edited": "2020-03-06T00:32:35.127Z",
+        "title": "Super Castlevania IV",
+        "description": "Super Castlevania IV is a 1991 platform game developed and published by Konami. Released originally for the Super Nintendo Entertainment System, it has been re-released multiple times, including for the Super NES Classic Edition.\r\n\r\nSuper Castlevania IV features expanded play control, 16-bit graphics featuring SNES Mode 7, and a soundtrack featuring brand new pieces and arrangements based on previous Castlevania music. Following the same setting as Castlevania on the NES, the game takes place in 1691 Transylvania, where the vampire hunter Simon Belmont must defeat the vampire Dracula. The game received critical acclaim with some calling it one of the greatest video games of all time.",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/c/c2/Super_Castlevania_IV_North_American_SNES_box_art.png",
+        "developer": "Konami",
+        "publisher": "Konami",
+        "release_date": "1991-10-31",
+        "director": [
+            14
+        ],
+        "genre": [
+            1
+        ],
+        "platform": [
+            2
+        ]
+    }
+}
+]

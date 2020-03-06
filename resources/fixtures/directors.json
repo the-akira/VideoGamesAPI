@@ -1,0 +1,222 @@
+[
+{
+    "model": "resources.director",
+    "pk": 1,
+    "fields": {
+        "created": "2020-03-05T23:52:52.571Z",
+        "edited": "2020-03-05T23:52:52.571Z",
+        "name": "Ed Boon",
+        "born_country": "United States"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 2,
+    "fields": {
+        "created": "2020-03-05T23:53:02.456Z",
+        "edited": "2020-03-05T23:53:02.456Z",
+        "name": "Toru Iwatani",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 3,
+    "fields": {
+        "created": "2020-03-05T23:54:46.998Z",
+        "edited": "2020-03-05T23:54:58.397Z",
+        "name": "Casey Hudson",
+        "born_country": "Canada"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 4,
+    "fields": {
+        "created": "2020-03-05T23:55:21.396Z",
+        "edited": "2020-03-05T23:55:21.396Z",
+        "name": "Todd Howard",
+        "born_country": "United States"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 5,
+    "fields": {
+        "created": "2020-03-05T23:55:58.547Z",
+        "edited": "2020-03-05T23:55:58.547Z",
+        "name": "Shigeru Miyamoto",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 6,
+    "fields": {
+        "created": "2020-03-05T23:56:04.881Z",
+        "edited": "2020-03-05T23:56:04.881Z",
+        "name": "Hideo Kojima",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 7,
+    "fields": {
+        "created": "2020-03-05T23:56:20.500Z",
+        "edited": "2020-03-05T23:56:20.500Z",
+        "name": "Koji Igarashi",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 8,
+    "fields": {
+        "created": "2020-03-05T23:56:51.724Z",
+        "edited": "2020-03-05T23:56:51.725Z",
+        "name": "Neil Druckmann",
+        "born_country": "Israel"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 9,
+    "fields": {
+        "created": "2020-03-05T23:57:10.097Z",
+        "edited": "2020-03-05T23:57:10.097Z",
+        "name": "Amy Hennig",
+        "born_country": "United States"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 10,
+    "fields": {
+        "created": "2020-03-05T23:57:22.659Z",
+        "edited": "2020-03-05T23:57:22.660Z",
+        "name": "Tetsuya Nomura",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 11,
+    "fields": {
+        "created": "2020-03-05T23:58:02.794Z",
+        "edited": "2020-03-05T23:58:02.794Z",
+        "name": "Patrice D\u00e9silets",
+        "born_country": "Canada"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 12,
+    "fields": {
+        "created": "2020-03-05T23:58:31.358Z",
+        "edited": "2020-03-05T23:58:31.358Z",
+        "name": "Fumito Ueda",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 13,
+    "fields": {
+        "created": "2020-03-05T23:59:00.285Z",
+        "edited": "2020-03-05T23:59:00.285Z",
+        "name": "Takashi Tezuka",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 14,
+    "fields": {
+        "created": "2020-03-05T23:59:08.568Z",
+        "edited": "2020-03-05T23:59:08.568Z",
+        "name": "Masahiro Ueno",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 15,
+    "fields": {
+        "created": "2020-03-05T23:59:22.154Z",
+        "edited": "2020-03-05T23:59:22.154Z",
+        "name": "Yoshio Sakamoto",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 16,
+    "fields": {
+        "created": "2020-03-05T23:59:32.504Z",
+        "edited": "2020-03-05T23:59:32.504Z",
+        "name": "Tim Stamper",
+        "born_country": "United States"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 17,
+    "fields": {
+        "created": "2020-03-05T23:59:38.251Z",
+        "edited": "2020-03-05T23:59:38.251Z",
+        "name": "Kouji Inokuchi",
+        "born_country": "Japan"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 18,
+    "fields": {
+        "created": "2020-03-05T23:59:47.008Z",
+        "edited": "2020-03-05T23:59:47.008Z",
+        "name": "Matthew Findley",
+        "born_country": "United States"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 19,
+    "fields": {
+        "created": "2020-03-05T23:59:56.642Z",
+        "edited": "2020-03-05T23:59:56.642Z",
+        "name": "Yoshinori Takenaka",
+        "born_country": "United States"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 20,
+    "fields": {
+        "created": "2020-03-06T00:00:06.757Z",
+        "edited": "2020-03-06T00:00:06.757Z",
+        "name": "Tokuro Fujiwara",
+        "born_country": "United States"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 21,
+    "fields": {
+        "created": "2020-03-06T00:00:14.371Z",
+        "edited": "2020-03-06T00:00:14.371Z",
+        "name": "Hironobu Sakaguchi",
+        "born_country": "United States"
+    }
+},
+{
+    "model": "resources.director",
+    "pk": 22,
+    "fields": {
+        "created": "2020-03-06T00:00:19.591Z",
+        "edited": "2020-03-06T00:00:19.591Z",
+        "name": "Takashi Tokita",
+        "born_country": "United States"
+    }
+}
+]
