@@ -27,7 +27,7 @@ class TestEndpoints(TestCase):
 	def test_games_search(self):
 		response = self.get_query('/api/games/?search=castlevania')
 		json_data = json.loads(response.content)
-		game = Game.objects.all().first()
+		game = Game.objects.get(title='Castlevania: Symphony of the Night')
 		self.assertEqual(response.status_code, 200)
 
 		list_response = self.get_query('/api/games/')
@@ -38,7 +38,7 @@ class TestEndpoints(TestCase):
 	def test_games_detail(self):
 		response = self.get_query('/api/games/3/')
 		json_data = json.loads(response.content)
-		game = Game.objects.all().first()
+		game = Game.objects.get(title='Castlevania: Symphony of the Night')
 		self.assertEqual(response.status_code, 200)
 		self.assertEqual(game.title, json_data['title'])
 
@@ -51,7 +51,7 @@ class TestEndpoints(TestCase):
 	def test_platforms_search(self):
 		response = self.get_query('/api/platforms/?search=SNES')
 		json_data = json.loads(response.content)
-		platform = Platform.objects.all().first()
+		platform = Platform.objects.get(name='Super Nintendo Entertainment System (SNES)')
 		self.assertEqual(response.status_code, 200)
 
 		list_response = self.get_query('/api/platforms/')
@@ -62,6 +62,6 @@ class TestEndpoints(TestCase):
 	def test_platforms_detail(self):
 		response = self.get_query('/api/platforms/2/')
 		json_data = json.loads(response.content)
-		platform = Platform.objects.all().first()
+		platform = Platform.objects.get(name='Super Nintendo Entertainment System (SNES)')
 		self.assertEqual(response.status_code, 200)
 		self.assertEqual(platform.name, json_data['name'])
