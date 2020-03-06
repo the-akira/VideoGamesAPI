@@ -11,11 +11,6 @@ class DateTimeModel(models.Model):
 
 class Genre(DateTimeModel):
     """Model representing a game genre"""
-    id = models.UUIDField(
-        primary_key=True, 
-        default=uuid.uuid4, 
-        help_text='Unique ID for this particular genre'
-        )
     name = models.CharField(max_length=200)
     
     def __str__(self):
@@ -55,11 +50,6 @@ class Platform(DateTimeModel):
 
 class Director(DateTimeModel):
     """Model representing a game director"""
-    id = models.UUIDField(
-        primary_key=True, 
-        default=uuid.uuid4, 
-        help_text='Unique ID for this particular genre'
-        )
     name = models.CharField(max_length=200)
     born_country = models.CharField(max_length=150, default="")
     
@@ -85,6 +75,11 @@ class Game(DateTimeModel):
 
 class Screenshot(DateTimeModel):
     """Model representing screenshots for a given game"""
+    id = models.UUIDField(
+        primary_key=True, 
+        default=uuid.uuid4, 
+        help_text='Unique ID for this particular genre'
+        )
     game = models.ForeignKey(Game, related_name="game", on_delete=models.CASCADE)
     screenshot_1 = models.CharField(max_length=500)
     screenshot_2 = models.CharField(max_length=500)

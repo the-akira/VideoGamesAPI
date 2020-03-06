@@ -337,7 +337,7 @@ paths:
       - name: id
         in: path
         required: true
-        description: A unique integer value identifying this screenshot.
+        description: Unique ID for this particular genre
         schema:
           type: string
       - name: search
@@ -411,9 +411,8 @@ paths:
                     items:
                       properties:
                         id:
-                          type: string
-                          format: uuid
-                          description: Unique ID for this particular genre
+                          type: integer
+                          readOnly: true
                         name:
                           type: string
                           maxLength: 200
@@ -431,7 +430,7 @@ paths:
       - name: id
         in: path
         required: true
-        description: Unique ID for this particular genre
+        description: A unique integer value identifying this director.
         schema:
           type: string
       - name: search
@@ -447,9 +446,8 @@ paths:
               schema:
                 properties:
                   id:
-                    type: string
-                    format: uuid
-                    description: Unique ID for this particular genre
+                    type: integer
+                    readOnly: true
                   name:
                     type: string
                     maxLength: 200
@@ -497,9 +495,8 @@ paths:
                     items:
                       properties:
                         id:
-                          type: string
-                          format: uuid
-                          description: Unique ID for this particular genre
+                          type: integer
+                          readOnly: true
                         name:
                           type: string
                           maxLength: 200
@@ -514,7 +511,7 @@ paths:
       - name: id
         in: path
         required: true
-        description: Unique ID for this particular genre
+        description: A unique integer value identifying this genre.
         schema:
           type: string
       - name: search
@@ -530,9 +527,8 @@ paths:
               schema:
                 properties:
                   id:
-                    type: string
-                    format: uuid
-                    description: Unique ID for this particular genre
+                    type: integer
+                    readOnly: true
                   name:
                     type: string
                     maxLength: 200
