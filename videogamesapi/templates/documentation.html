@@ -11,8 +11,8 @@
 		<ul class="list-group">
 		  <h3 class="docs-subtitle">Start!</h3>
 		  <li class="list-group-item"><a href="#introduction">Introduction</a></li>
-		  <li class="list-group-item"><a href="#introduction">Getting Started</a></li>
-		  <li class="list-group-item"><a href="#introduction">Base URL</a></li>
+		  <li class="list-group-item"><a href="#getting-started">Getting Started</a></li>
+		  <li class="list-group-item"><a href="#base-url">Base URL</a></li>
 		  <li class="list-group-item"><a href="#introduction">Authentication</a></li>
 		  <li class="list-group-item"><a href="#introduction">Search Filter</a></li>
 		  <li class="list-group-item"><a href="#introduction">Pagination</a></li>
@@ -29,25 +29,82 @@
 		</ul>
 	</div>
     <div class="col-md-7">
-		<h1 id="introduction" class="doc-title">Introduction</h1>
 		<hr>
-		<p class="docs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<h2 id="introduction" class="doc-title">Introduction</h2>
+		<p class="docs">Welcome to the <b>Video Games API Documentation</b> here you will better understand the details about the available resources and also learn how to consume them through <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html">HTTP requests</a>.</p>
+		<hr>
+		<h2 id="getting-started" class="doc-title">Getting Started</h2>
+		<p class="docs">
+			Video Games API is an API focused on reading resources, for this reason we will use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET">GET method</a> with it in most scenarios to obtain our resources in JSON format and use it in the way that is most convenient for us.
+		</p>
+		<p class="docs">
+			There are several ways to execute HTTP requests, either through a web browser, a programming language like Python or Javascript, or with software like curl or httpie. For this specific task we will use httpie for its simplicity. So let's start by asking for resources about the game genres. Open up your terminal and type
+		</p>
 		<code>
-			<pre>import requests</pre>
-			<pre>print('hello world')</pre>
-			<pre>for i in range(100):</pre>
-			<pre>    print(i)</pre>
+			<pre>http https://videogamesapi.herokuapp.com/api/genres/</pre>
 		</code>
 		<br>
-		<p class="docs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+		<p class="docs">
+			We will immediately receive the following resource in response			
+		</p>
 		<code>
-			<pre>import requests</pre>
-			<pre>print('hello world')</pre>
-			<pre>for i in range(100):</pre>
-			<pre>    print(i)</pre>
+			<pre>
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 351
+Content-Type: application/json
+Date: Fri, 06 Mar 2020 18:03:27 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "count": 58,
+    "next": "http://127.0.0.1:8000/api/genres/?page=2",
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "name": "Platform games"
+        },
+        {
+            "id": 2,
+            "name": "Shooter games"
+        },
+        {
+            "id": 3,
+            "name": "Fighting games"
+        },
+        {
+            "id": 4,
+            "name": "Beat 'em up games"
+        },
+        {
+            "id": 5,
+            "name": "Stealth game"
+        },
+        {
+            "id": 6,
+            "name": "Survival games"
+        },
+        {
+            "id": 7,
+            "name": "Battle Royale"
+        },
+        {
+            "id": 8,
+            "name": "Rhythm games"
+        }
+    ]
+}
+			</pre>
 		</code>
-		<br>
-		<p class="docs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<p class="docs">
+			As we can see, several game genres are returned to us with their respective ids and names
+		</p>
+		<hr>
+		<h2 id="base-url" class="doc-title">Base URL</h2>
 	</div>
   </div>
 </div>

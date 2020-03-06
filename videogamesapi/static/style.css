@@ -194,6 +194,10 @@ html {
 	background-color: black;
 }
 
+.col-md-4{
+	margin-top: 0;
+}
+
 .col-md-7{
 	margin-top: 10px;
 }
