@@ -13,10 +13,10 @@
 		  <li class="list-group-item"><a href="#introduction">Introduction</a></li>
 		  <li class="list-group-item"><a href="#getting-started">Getting Started</a></li>
 		  <li class="list-group-item"><a href="#base-url">Base URL</a></li>
-		  <li class="list-group-item"><a href="#introduction">Authentication</a></li>
-		  <li class="list-group-item"><a href="#introduction">Search Filter</a></li>
-		  <li class="list-group-item"><a href="#introduction">Pagination</a></li>
-		  <li class="list-group-item"><a href="#introduction">Encoding</a></li>
+		  <li class="list-group-item"><a href="#authentication">Authentication</a></li>
+		  <li class="list-group-item"><a href="#search-filter">Search Filter</a></li>
+		  <li class="list-group-item"><a href="#pagination">Pagination</a></li>
+		  <li class="list-group-item"><a href="#encoding">Encoding</a></li>
 		  <hr>
 		  <h3 class="docs-subtitle">Resources</h3>
 		  <li class="list-group-item"><a href="#introduction">Root</a></li>
@@ -29,7 +29,6 @@
 		</ul>
 	</div>
     <div class="col-md-7">
-		<hr>
 		<h2 id="introduction" class="doc-title">Introduction</h2>
 		<p class="docs">Welcome to the <b>Video Games API Documentation</b> here you will better understand the details about the available resources and also learn how to consume them through <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html">HTTP requests</a>.</p>
 		<hr>
@@ -105,8 +104,187 @@ X-Frame-Options: DENY
 		</p>
 		<hr>
 		<h2 id="base-url" class="doc-title">Base URL</h2>
+		<p class="docs">
+			The base URL is the root URL of the API's and it can serve as a map to locate us and understand the resources that are at our disposal.
+
+			The base URL for the Video Games API is as follows
+		</p>
+		<code>
+			<pre>https://videogamesapi.herokuapp.com/api/</pre>
+		</code>
+		<p class="docs">Consider this root URL as the basis for our future requests</p>
+		<hr>
+		<h2 id="authentication" class="doc-title">Authentication</h2>
+		<p class="docs">
+			Video Games API is a completely open API, without the need for authentication or token generation to obtain the data
+		</p>
+		<hr>
+		<h2 id="search-filter" class="doc-title">Search Filter</h2>
+		<p class="docs">
+		  The SearchFilter class supports simple single query parameter based searching, and is based on the Django admin's search functionality. Each resource has a field in which we can query specific data. Let's look at an example to illustrate the idea! 
+		</p>
+		<p class="docs">
+			Let's make an HTTP request to the following URL
+		</p>
+		<code><pre>https://videogamesapi.herokuapp.com/api/games/?search=Castlevania:</pre></code>
+		<p class="docs">
+			We will get a filtered response only from the games we want
+		</p>
+		<code>
+			<pre>
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 1254
+Content-Type: application/json
+Date: Fri, 06 Mar 2020 18:48:26 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "cover": "https://upload.wikimedia.org/wikipedia/en/c/cf/Castlevania_SOTN_PAL.jpg",
+            "description": "Castlevania: Symphony of the Night is a platform-adventure action role-playing game developed and published by Konami in 1997 for the PlayStation. It was directed and produced by Toru Hagihara, with Koji Igarashi acting as assistant director. It is the direct sequel to Castlevania: Rondo of Blood, taking place four years later, and is the 10th entry into the Castlevania Series. It features Dracula's dhampir son Alucard as the protagonist, rising from his slumber to explore Dracula's castle which has re-appeared after Richter Belmont vanished. It marks a break from previous games in the series, introducing exploration, non-linear level design and role-playing elements.",
+            "developer": "Konami Computer Entertainment Tokyo",
+            "director": [
+                "http://127.0.0.1:8000/api/directors/7/"
+            ],
+            "genre": [
+                "http://127.0.0.1:8000/api/genres/1/",
+                "http://127.0.0.1:8000/api/genres/10/",
+                "http://127.0.0.1:8000/api/genres/16/"
+            ],
+            "id": 3,
+            "platform": [
+                "http://127.0.0.1:8000/api/platforms/4/",
+                "http://127.0.0.1:8000/api/platforms/5/"
+            ],
+            "publisher": "Konami",
+            "release_date": "1997-03-20",
+            "title": "Castlevania: Symphony of the Night"
+        }
+    ]
+}				
+			</pre>
+		</code>
+		<p class="docs">
+			In this case the game was filtered by title
+		</p>
+		<hr>
+		<h2 id="pagination" class="doc-title">Pagination</h2>
+		<p class="docs">
+			Video Games API provides data through chunks that can be paged. Let's request the second page of game directors to get an idea of how this mechanism works
+		</p>
+		<p class="docs">
+			Let's request the following URL
+		</p>
+		<code><pre>https://videogamesapi.herokuapp.com/api/directors/?page=2</pre></code>
+		<p class="docs">
+			Immediately we obtain the respective data on the second page of Games directors
+		</p>
+		<code>
+			<pre>
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 592
+Content-Type: application/json
+Date: Fri, 06 Mar 2020 18:59:22 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "count": 22,
+    "next": "http://127.0.0.1:8000/api/directors/?page=3",
+    "previous": "http://127.0.0.1:8000/api/directors/",
+    "results": [
+        {
+            "born_country": "United States",
+            "id": 9,
+            "name": "Amy Hennig"
+        },
+        {
+            "born_country": "Japan",
+            "id": 10,
+            "name": "Tetsuya Nomura"
+        },
+        {
+            "born_country": "Canada",
+            "id": 11,
+            "name": "Patrice Désilets"
+        },
+        {
+            "born_country": "Japan",
+            "id": 12,
+            "name": "Fumito Ueda"
+        },
+        {
+            "born_country": "Japan",
+            "id": 13,
+            "name": "Takashi Tezuka"
+        },
+        {
+            "born_country": "Japan",
+            "id": 14,
+            "name": "Masahiro Ueno"
+        },
+        {
+            "born_country": "Japan",
+            "id": 15,
+            "name": "Yoshio Sakamoto"
+        },
+        {
+            "born_country": "United States",
+            "id": 16,
+            "name": "Tim Stamper"
+        }
+    ]
+}				
+			</pre>
+		</code>
+		<p class="docs">
+			Through pagination we can browse all available data
+		</p>
+		<hr>
+		<h2 id="encoding" class="doc-title">Encoding</h2>
+		<p class="docs">
+			JSON is the standard data format provided by Video Games API by default. You can see details about Schema at the following URL: <a href="https://videogamesapi.herokuapp.com/api/schema/">API Schema</a>
+		</p>
+		<hr>
+		<h1 class="doc-title">Resources</h1>
+		<p>
+			In this section we’ll understand the details about each available resource by the Video Games API
+		</p>
 	</div>
   </div>
 </div>
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
 {% include '_footer.html' %}
 {% endblock content %}
+
+{% block scripts %}
+<script type="text/javascript">
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+} 	
+</script>
+{% endblock scripts %}
