@@ -216,6 +216,7 @@ html {
 	background-color: #a09fd8;
 	color: black;
 	border: 1px solid #9400ff;
+	margin-bottom: 2px;
 }
 
 @media only screen and (max-width: 772px) {
@@ -289,4 +290,8 @@ a{
 
 a:hover{
 	color: #9400ff;
+}
+
+.list-group-item a {
+	color: black;
 }
