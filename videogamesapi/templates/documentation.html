@@ -20,7 +20,7 @@
 		  <hr>
 		  <h3 class="docs-subtitle">Resources</h3>
 		  <li class="list-group-item"><a href="#root">Root</a></li>
-		  <li class="list-group-item"><a href="#introduction">Games</a></li>
+		  <li class="list-group-item"><a href="#games">Games</a></li>
 		  <li class="list-group-item"><a href="#introduction">Genres</a></li>
 		  <li class="list-group-item"><a href="#introduction">Platforms</a></li>
 		  <li class="list-group-item"><a href="#introduction">Directors</a></li>
@@ -183,7 +183,7 @@ X-Frame-Options: DENY
 		<p class="docs">
 			Let's request the following URL
 		</p>
-		<code><pre>https://videogamesapi.herokuapp.com/api/directors/?page=2</pre></code>
+		<code><pre>http https://videogamesapi.herokuapp.com/api/directors/?page=2</pre></code>
 		<p class="docs">
 			Immediately we obtain the respective data on the second page of Games directors
 		</p>
@@ -297,11 +297,74 @@ X-Frame-Options: DENY
 		<br>
 		<h4 class="doc-title">Root Attributes</h4>
 		<ul class="attributes-api">
-			<li># <b>Directors</b> -> String -> The URL root for Directors resources</li>
-			<li># <b>Games</b> -> String -> The URL root for Games resources</li>
-			<li># <b>Genres</b> -> String -> The URL root for Genres resources</li>
-			<li># <b>Platforms</b> -> String -> The URL root for Platforms resources</li>
-			<li># <b>Screenshots</b> -> String -> The URL root for Screenshots resources</li>
+			<li># <b>directors</b> | String | The URL root for Directors resources</li>
+			<li># <b>games</b> | String | The URL root for Games resources</li>
+			<li># <b>genres</b> | String | The URL root for Genres resources</li>
+			<li># <b>platforms</b> | String | The URL root for Platforms resources</li>
+			<li># <b>screenshots</b> | String | The URL root for Screenshots resources</li>
+		</ul>
+		<hr>
+		<h2 id="Games" class="doc-title">Games</h2>
+		<p class="docs">
+			A game resource represents a game object with several attributes 
+		</p>
+		<h4 class="docs-title">Endpoints</h4>
+		<ul class="attributes-api">
+			<li># <b>/api/games/</b> | Get all the games resources</li>
+			<li># <b>/api/games/{id}</b> | Get a specific game</li>
+		</ul>		
+		<p class="docs">
+			Example request:
+		</p>
+		<code><pre>http https://videogamesapi.herokuapp.com/api/games/5/</pre></code>
+		<p class="docs">
+			We will get the following response:
+		</p>
+		<code>
+			<pre>
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 1089
+Content-Type: application/json
+Date: Fri, 06 Mar 2020 21:36:26 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "cover": "https://upload.wikimedia.org/wikipedia/en/c/c2/Super_Castlevania_IV_North_American_SNES_box_art.png",
+    "description": "Super Castlevania IV is a 1991 platform game developed and published by Konami. Released originally for the Super Nintendo Entertainment System, it has been re-released multiple times, including for the Super NES Classic Edition.\r\n\r\nSuper Castlevania IV features expanded play control, 16-bit graphics featuring SNES Mode 7, and a soundtrack featuring brand new pieces and arrangements based on previous Castlevania music. Following the same setting as Castlevania on the NES, the game takes place in 1691 Transylvania, where the vampire hunter Simon Belmont must defeat the vampire Dracula. The game received critical acclaim with some calling it one of the greatest video games of all time.",
+    "developer": "Konami",
+    "director": [
+        "http://127.0.0.1:8000/api/directors/14/"
+    ],
+    "genre": [
+        "http://127.0.0.1:8000/api/genres/1/"
+    ],
+    "id": 5,
+    "platform": [
+        "http://127.0.0.1:8000/api/platforms/2/"
+    ],
+    "publisher": "Konami",
+    "release_date": "1991-10-31",
+    "title": "Super Castlevania IV"
+}
+			</pre>
+		</code>
+		<br>
+		<h4 class="doc-title">Games Attributes</h4>
+		<ul class="attributes-api">
+			<li># <b>id</b> | Integer | Unique id representing a game</li>
+			<li># <b>title</b> | String | Represents the title of the respective game</li>
+			<li># <b>description</b> | String | A brief description of the game</li>
+			<li># <b>cover</b> | String | image URL representing the game cover</li>
+			<li># <b>developer</b> | String | person or organization responsible for developing the game</li>
+			<li># <b>publisher</b> | String | person or organization responsible for publishing the game</li>
+			<li># <b>director</b> | Array | An array of directors resource URLs representing the directors/creators of the game</li>
+			<li># <b>genre</b> | Array | An array of genres resource URLs representing the genres of the game</li>
+			<li># <b>platform</b> | Array | An array of platforms resource URLs representing the platforms in which the game was released</li>
+			<li># <b>release_date</b> | String | Represents the date on which the game was released</li>
 		</ul>
 		<hr>
 	</div>
