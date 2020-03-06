@@ -19,7 +19,7 @@
 		  <li class="list-group-item"><a href="#encoding">Encoding</a></li>
 		  <hr>
 		  <h3 class="docs-subtitle">Resources</h3>
-		  <li class="list-group-item"><a href="#introduction">Root</a></li>
+		  <li class="list-group-item"><a href="#root">Root</a></li>
 		  <li class="list-group-item"><a href="#introduction">Games</a></li>
 		  <li class="list-group-item"><a href="#introduction">Genres</a></li>
 		  <li class="list-group-item"><a href="#introduction">Platforms</a></li>
@@ -37,7 +37,7 @@
 			Video Games API is an API focused on reading resources, for this reason we will use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET">GET method</a> with it in most scenarios to obtain our resources in JSON format and use it in the way that is most convenient for us.
 		</p>
 		<p class="docs">
-			There are several ways to execute HTTP requests, either through a web browser, a programming language like Python or Javascript, or with software like curl or httpie. For this specific task we will use httpie for its simplicity. So let's start by asking for resources about the game genres. Open up your terminal and type
+			There are several ways to execute HTTP requests, either through a web browser, a programming language like <a href="https://requests.readthedocs.io/en/master/">Python</a> or <a href="https://github.com/axios/axios">Javascript</a>, or with software like <a href="https://github.com/curl/curl">curl</a> or <a href="https://httpie.org/">httpie</a>. For this specific task we will use httpie for its simplicity. So let's start by asking for resources about the game genres. Open up your terminal and type
 		</p>
 		<code>
 			<pre>http https://videogamesapi.herokuapp.com/api/genres/</pre>
@@ -261,6 +261,49 @@ X-Frame-Options: DENY
 		<p>
 			In this section we’ll understand the details about each available resource by the Video Games API
 		</p>
+		<hr>
+		<h2 id="root" class="doc-title">Root</h2>
+		<p class="docs">
+			The Root resource provides information on all available resources within the API. 
+		</p>
+		<p class="docs">
+			Example request:
+		</p>
+		<code><pre>http https://videogamesapi.herokuapp.com/api/</pre></code>
+		<p class="docs">
+			We will get the following response:
+		</p>
+		<code>
+			<pre>
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 246
+Content-Type: application/json
+Date: Fri, 06 Mar 2020 19:37:53 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "directors": "http://127.0.0.1:8000/api/directors/",
+    "games": "http://127.0.0.1:8000/api/games/",
+    "genres": "http://127.0.0.1:8000/api/genres/",
+    "platforms": "http://127.0.0.1:8000/api/platforms/",
+    "screenshots": "http://127.0.0.1:8000/api/screenshots/"
+}
+			</pre>
+		</code>
+		<br>
+		<h4 class="doc-title">Root Attributes</h4>
+		<ul class="attributes-api">
+			<li># <b>Directors</b> -> String -> The URL root for Directors resources</li>
+			<li># <b>Games</b> -> String -> The URL root for Games resources</li>
+			<li># <b>Genres</b> -> String -> The URL root for Genres resources</li>
+			<li># <b>Platforms</b> -> String -> The URL root for Platforms resources</li>
+			<li># <b>Screenshots</b> -> String -> The URL root for Screenshots resources</li>
+		</ul>
+		<hr>
 	</div>
   </div>
 </div>

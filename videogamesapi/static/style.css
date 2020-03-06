@@ -320,3 +320,12 @@ a:hover{
   background-color: #3c3c42;
   color: black; 
 }
+
+.attributes-api{
+	padding-left: 0;
+}
+
+.attributes-api li {
+	margin-top: 2px;
+	text-shadow: 2px 2px 2px #201e24;	
+}
