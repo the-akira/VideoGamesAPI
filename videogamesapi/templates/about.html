@@ -16,7 +16,7 @@
 		  <div class="input-group-append">
 		    <label class="input-group-text">https://videogamesapi.herokuapp.com/api/</label>
 		  </div>
-		  <input id="inputdata" type="text" class="form-control" placeholder="games/1/" aria-label="Recipient's username" aria-describedby="basic-addon2">
+		  <input id="inputdata" type="text" class="form-control" placeholder="games/3/" aria-label="Recipient's username" aria-describedby="basic-addon2">
 		  <div class="input-group-append">
 		    <button onClick="XMLRequest(); return false;" class="btn" type="button">Get Data
 		    </button>
@@ -79,7 +79,7 @@ function XMLRequest(){
 	var input = document.getElementById('inputdata').value;
 	var output = document.getElementById('output');
 	if(input == ''){
-		input = 'games/1/';
+		input = 'games/3/';
 	}
 	var apiUrl = `/api/${input}`;
 	var xhr = new XMLHttpRequest();

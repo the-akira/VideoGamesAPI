@@ -4,7 +4,7 @@ from .models import Game, Director, Genre, Platform, Screenshot
 class ScreenshotSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Screenshot
-        fields = ['game','screenshot_1','screenshot_2','screenshot_3','screenshot_4']
+        fields = ['id','game','screenshot_1','screenshot_2','screenshot_3','screenshot_4']
 
 class GenreSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
@@ -19,7 +19,7 @@ class DirectorSerializer(serializers.HyperlinkedModelSerializer):
 class PlatformSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = Platform 
-		fields = ['name','developer','generation','media','cpu','release_date']
+		fields = ['id','name','developer','generation','media','cpu','release_date']
 
 class GameSerializer(serializers.HyperlinkedModelSerializer):
     director = serializers.HyperlinkedRelatedField(
@@ -43,6 +43,7 @@ class GameSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
     	model = Game
     	fields = [
+            'id',
     		'title',
     		'description',
             'cover',
