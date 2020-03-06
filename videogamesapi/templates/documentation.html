@@ -21,11 +21,15 @@
 		  <h3 class="docs-subtitle">Resources</h3>
 		  <li class="list-group-item"><a href="#root">Root</a></li>
 		  <li class="list-group-item"><a href="#games">Games</a></li>
-		  <li class="list-group-item"><a href="#introduction">Genres</a></li>
-		  <li class="list-group-item"><a href="#introduction">Platforms</a></li>
-		  <li class="list-group-item"><a href="#introduction">Directors</a></li>
-		  <li class="list-group-item"><a href="#introduction">Screenshots</a></li>
-		  <li class="list-group-item"><a href="#introduction">Schema</a></li>
+		  <li class="list-group-item"><a href="#genres">Genres</a></li>
+		  <li class="list-group-item"><a href="#platforms">Platforms</a></li>
+		  <li class="list-group-item"><a href="#directors">Directors</a></li>
+		  <li class="list-group-item"><a href="#screenshots">Screenshots</a></li>
+		  <li class="list-group-item"><a href="#schema">Schema</a></li>
+		  <hr>
+		  <h3 class="docs-subtitle">Developers</h3>
+		  <li class="list-group-item"><a href="#contribution">Contribution</a></li>
+		  <li class="list-group-item"><a href="#playground">Playground</a></li>
 		</ul>
 	</div>
     <div class="col-md-7">
@@ -304,7 +308,7 @@ X-Frame-Options: DENY
 			<li># <b>screenshots</b> | String | The URL root for Screenshots resources</li>
 		</ul>
 		<hr>
-		<h2 id="Games" class="doc-title">Games</h2>
+		<h2 id="games" class="doc-title">Games</h2>
 		<p class="docs">
 			A game resource represents a game object with several attributes 
 		</p>
@@ -367,6 +371,280 @@ X-Frame-Options: DENY
 			<li># <b>release_date</b> | String | Represents the date on which the game was released</li>
 		</ul>
 		<hr>
+		<h2 id="genres" class="doc-title">Genres</h2>
+		<p class="docs">
+			A genre resource represents a game genre
+		</p>
+		<h4 class="docs-title">Endpoints</h4>
+		<ul class="attributes-api">
+			<li># <b>/api/genres/</b> | Get all the genres resources</li>
+			<li># <b>/api/genres/{id}</b> | Get a specific genre</li>
+		</ul>		
+		<p class="docs">
+			Example request:
+		</p>
+		<code><pre>http https://videogamesapi.herokuapp.com/api/genres/?page=2</pre></code>
+		<p class="docs">
+			Notice that we have requested the second page and we will get the following response:
+		</p>
+		<code>
+			<pre>
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 403
+Content-Type: application/json
+Date: Fri, 06 Mar 2020 22:17:30 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "count": 58,
+    "next": "http://127.0.0.1:8000/api/genres/?page=3",
+    "previous": "http://127.0.0.1:8000/api/genres/",
+    "results": [
+        {
+            "id": 9,
+            "name": "Survival horror"
+        },
+        {
+            "id": 10,
+            "name": "Metroidvania"
+        },
+        {
+            "id": 11,
+            "name": "Text adventures"
+        },
+        {
+            "id": 12,
+            "name": "Graphic adventures"
+        },
+        {
+            "id": 13,
+            "name": "Visual novels"
+        },
+        {
+            "id": 14,
+            "name": "Interactive movie"
+        },
+        {
+            "id": 15,
+            "name": "Real-time 3D adventures"
+        },
+        {
+            "id": 16,
+            "name": "Action RPG"
+        }
+    ]
+}
+			</pre>
+		</code>
+		<br>
+		<h4 class="doc-title">Genre Attributes</h4>
+		<ul class="attributes-api">
+			<li># <b>id</b> | Integer | Unique id representing a genre</li>
+			<li># <b>name</b> | String | Represents the name of the respective genre</li>
+		</ul>
+		<hr>
+		<h2 id="platforms" class="doc-title">Platforms</h2>
+		<p class="docs">
+			A platform resource represents a game platform
+		</p>
+		<h4 class="docs-title">Endpoints</h4>
+		<ul class="attributes-api">
+			<li># <b>/api/platforms/</b> | Get all the platforms resources</li>
+			<li># <b>/api/platforms/{id}</b> | Get a specific platform</li>
+		</ul>		
+		<p class="docs">
+			Example request:
+		</p>
+		<code><pre>http https://videogamesapi.herokuapp.com/api/platforms/2/</pre></code>
+		<p class="docs">
+			We will get the following response:
+		</p>
+		<code>
+			<pre>
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 189
+Content-Type: application/json
+Date: Fri, 06 Mar 2020 22:25:19 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "cpu": "Ricoh 5A22 @ 3.58 MHz",
+    "developer": "Nintendo R&D2",
+    "generation": "4th",
+    "id": 2,
+    "media": "ROM cartridge",
+    "name": "Super Nintendo Entertainment System (SNES)",
+    "release_date": "1990-11-21"
+}
+			</pre>
+		</code>
+		<br>
+		<h4 class="doc-title">Platform Attributes</h4>
+		<ul class="attributes-api">
+			<li># <b>id</b> | Integer | Unique id representing a platform</li>
+			<li># <b>name</b> | String | Represents the name of the platform</li>
+			<li># <b>developer</b> | String | Represents the company or person responsible for designing the platform</li>
+			<li># <b>generation</b> | Enum | The generation the platform was part of</li>
+			<li># <b>media</b> | String | The type of media that runs on the platform</li>
+			<li># <b>cpu</b> | String | Represents the CPU responsible for the mathematical calculations</li>
+			<li># <b>release_date</b> | String | Represents the date on which the platform was released</li>
+		</ul>
+		<hr>
+		<h2 id="directors" class="doc-title">Directors</h2>
+		<p class="docs">
+			A director resource represents a game director
+		</p>
+		<h4 class="docs-title">Endpoints</h4>
+		<ul class="attributes-api">
+			<li># <b>/api/directors/</b> | Get all the directors resources</li>
+			<li># <b>/api/directors/{id}</b> | Get a specific director</li>
+		</ul>		
+		<p class="docs">
+			Example request:
+		</p>
+		<code><pre>http https://videogamesapi.herokuapp.com/api/directors/?search=Shigeru</pre></code>
+		<p class="docs">
+			Realize that we have searched for a director by his name through the search filter funcionality and we will get the following response:
+		</p>
+		<code>
+			<pre>
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 109
+Content-Type: application/json
+Date: Fri, 06 Mar 2020 22:34:40 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "born_country": "Japan",
+            "id": 5,
+            "name": "Shigeru Miyamoto"
+        }
+    ]
+}
+			</pre>
+		</code>
+		<br>
+		<h4 class="doc-title">Director Attributes</h4>
+		<ul class="attributes-api">
+			<li># <b>id</b> | Integer | Unique id representing a genre</li>
+			<li># <b>name</b> | String | Represents the name of the platform</li>
+			<li># <b>born_country</b> | String | Represents the country the director was born in</li>
+		</ul>
+		<hr>
+		<h2 id="screenshots" class="doc-title">Screenshots</h2>
+		<p class="docs">
+			A screenshots resource represents screenshots about a game
+		</p>
+		<h4 class="docs-title">Endpoints</h4>
+		<ul class="attributes-api">
+			<li># <b>/api/screenshots/</b> | Get all the screenshots resources</li>
+			<li># <b>/api/screenshots/{id}</b> | Get a specific screenshot identified by an ID</li>
+		</ul>		
+		<p class="docs">
+			Example request:
+		</p>
+		<code><pre>http https://videogamesapi.herokuapp.com/api/screenshots/</pre></code>
+		<p class="docs">
+			We will get the following response:
+		</p>
+		<code>
+			<pre>
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 1747
+Content-Type: application/json
+Date: Fri, 06 Mar 2020 22:42:40 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "count": 3,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "game": "http://127.0.0.1:8000/api/games/5/",
+            "id": "9578582c-74a2-49ce-b01c-559e957095d2",
+            "screenshot_1": "https://http2.mlstatic.com/cartucho-super-castlevania-iv-4-super-nintendo-snes-jogo-D_NQ_NP_893674-MLB26434479134_112017-F.jpg",
+            "screenshot_2": "https://i.pinimg.com/564x/56/87/08/568708ddf3733e748b931e7cf8828798.jpg",
+            "screenshot_3": "https://http2.mlstatic.com/jogo-super-castlevania-iv-4-super-nintendo-snes-dracula-novo-D_NQ_NP_834988-MLB26434471341_112017-F.jpg",
+            "screenshot_4": "https://s.uvlist.net/163400/screenshot/Super%20Castlevania%20IV%20(Super%20Nintendo).jpg"
+        },
+        {
+            "game": "http://127.0.0.1:8000/api/games/4/",
+            "id": "c3ee3ac9-d062-4ff6-a03b-c9317e74ba40",
+            "screenshot_1": "https://gamefabrique.com/storage/screenshots/snes/super-mario-world-05.png",
+            "screenshot_2": "https://i.pinimg.com/originals/41/ac/f4/41acf4c30be4ac15d8920652e3d624cb.jpg",
+            "screenshot_3": "https://m.media-amazon.com/images/M/MV5BZGZhYjczYzAtNDllNi00NzQxLTk3NzMtZTM3YmNlOTJiZDMxXkEyXkFqcGdeQXVyOTI2NzQwOTY@._V1_.jpg",
+            "screenshot_4": "https://media.giphy.com/media/ScdNPkEdgfFuM/giphy.gif"
+        },
+        {
+            "game": "http://127.0.0.1:8000/api/games/3/",
+            "id": "efbabf52-1875-4418-8121-fc0d4290113a",
+            "screenshot_1": "https://cdn.vox-cdn.com/thumbor/ICTMX_-WqGd43Zj2Cns9AXMPW_g=/0x0:1500x1000/1200x800/filters:focal(630x380:870x620)/cdn.vox-cdn.com/uploads/chorus_image/image/66432809/ESPmgPVU4AAWAu7.0.jpeg",
+            "screenshot_2": "https://www.droid-life.com/wp-content/uploads/2020/03/Castlevania-980x550.jpg",
+            "screenshot_3": "https://cdn.cultofmac.com/wp-content/uploads/2020/03/Castlevania-Symphony-of-the-Night.jpg",
+            "screenshot_4": "https://www.mobygames.com/images/shots/l/273154-castlevania-symphony-of-the-night-playstation-screenshot-in.jpg"
+        }
+    ]
+}
+			</pre>
+		</code>
+		<br>
+		<h4 class="doc-title">Screenshot Attributes</h4>
+		<ul class="attributes-api">
+			<li># <b>id</b> | Integer | Unique id representing a screenshot</li>
+			<li># <b>game</b> | String | Name of the game we want the screenshots</li>
+			<li># <b>screenshot_1</b> | String | URL for the game screenshot</li>
+			<li># <b>screenshot_2</b> | String | URL for the game screenshot</li>
+			<li># <b>screenshot_3</b> | String | URL for the game screenshot</li>
+			<li># <b>screenshot_4</b> | String | URL for the game screenshot</li>
+		</ul>
+		<hr>
+		<h2 id="schema" class="doc-title">Schema</h2>
+		<p class="docs">
+			API schemas are a useful tool that allow for a range of use cases, including generating reference documentation, or driving dynamic client libraries that can interact with your API.
+		</p>
+		<p class="docs">
+			You can find Schema for the Video Games API by visiting the following link: <a href="/schema">Schema API</a>
+		</p>
+		<hr>
+		<h2 id="contribution" class="doc-title">Contribution</h2>
+		<p class="docs">
+			You can contribute to the Video Games API project in several ways
+		</p>
+		<ul>
+			<li class="contribution-list">Fork or Start the project on <a href="https://github.com/the-akira/VideoGamesAPI">Github</a></li>
+			<li class="contribution-list">Share with your friends <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Help the project Video Games API https://github.com/the-akira/VideoGamesAPI"
+  data-size="large">
+Tweet</a></li>
+			<li class="contribution-list">Help to improve the Code, Data Models and Documentation</li>
+		</ul>
+		<hr>
+		<h2 id="playground" class="doc-title">Playground</h2>
+		<p class="docs">
+			Django Rest framework provides us with an interface that we can <a href="/api">try the API.</a> You can also test with AJAX at the <a href="/about">following link</a>
+		</p>
 	</div>
   </div>
 </div>

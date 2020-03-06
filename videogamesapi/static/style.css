@@ -329,3 +329,7 @@ a:hover{
 	margin-top: 2px;
 	text-shadow: 2px 2px 2px #201e24;	
 }
+
+.contribution-list{
+	list-style-type: circle;
+}
