@@ -27,16 +27,6 @@ Start exploring or maybe improving our video game resources
 
 You can read the complete documentation at the following address **[Docs](https://videogamesapi.herokuapp.com/documentation/)**
 
-## Contribution
-
-Help the project
-
-- Improving the data models
-- Share the project in some way
-- Use it to create an application for you
-- Provide more data for the project
-- Donate any small amount of Satoshi `1FdGuC2FiCM6nJs9SW4Lek4D4YuRNRKvrk`
-
 ## Installation
 
 ### Clone the Repository
@@ -70,3 +60,25 @@ Run the Application
 ```
 python manage.py runserver
 ```
+
+Run the Tests
+
+```
+python manage.py test
+```
+
+Load Data
+
+```
+python manage.py loaddata games.json
+```
+
+## Contribution
+
+Help the project
+
+- Improving the data models
+- Share the project in some way
+- Use it to create an application for you
+- Provide more data for the project
+- Donate any small amount of Satoshi `1FdGuC2FiCM6nJs9SW4Lek4D4YuRNRKvrk`
