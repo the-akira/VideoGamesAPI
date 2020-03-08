@@ -16,11 +16,11 @@ serve:
 	python manage.py runserver
 
 dump_data:
-	python manage.py dumpdata resources.games > resources/fixtures/games.json --indent 4
-	python manage.py dumpdata resources.directors > resources/fixtures/directors.json --indent 4
-	python manage.py dumpdata resources.genres > resources/fixtures/genres.json --indent 4
-	python manage.py dumpdata resources.platforms > resources/fixtures/platforms.json --indent 4
-	python manage.py dumpdata resources.screenshots > resources/fixtures/screenshots.json --indent 4
+	python manage.py dumpdata resources.game > resources/fixtures/games.json --indent 4
+	python manage.py dumpdata resources.director > resources/fixtures/directors.json --indent 4
+	python manage.py dumpdata resources.genre > resources/fixtures/genres.json --indent 4
+	python manage.py dumpdata resources.platform > resources/fixtures/platforms.json --indent 4
+	python manage.py dumpdata resources.screenshot > resources/fixtures/screenshots.json --indent 4
 
 drop_db:
 	python manage.py flush
