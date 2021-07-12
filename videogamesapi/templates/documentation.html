@@ -6,52 +6,52 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-		<a class="icone" href="/schema"><i class="fas fa-sitemap fa-4x"></i></a>
-		<hr>
-		<ul class="list-group">
-		  <h3 class="docs-subtitle">Start!</h3>
-		  <li class="list-group-item"><a href="#introduction">Introduction</a></li>
-		  <li class="list-group-item"><a href="#getting-started">Getting Started</a></li>
-		  <li class="list-group-item"><a href="#base-url">Base URL</a></li>
-		  <li class="list-group-item"><a href="#authentication">Authentication</a></li>
-		  <li class="list-group-item"><a href="#search-filter">Search Filter</a></li>
-		  <li class="list-group-item"><a href="#pagination">Pagination</a></li>
-		  <li class="list-group-item"><a href="#encoding">Encoding</a></li>
-		  <hr>
-		  <h3 class="docs-subtitle">Resources</h3>
-		  <li class="list-group-item"><a href="#root">Root</a></li>
-		  <li class="list-group-item"><a href="#games">Games</a></li>
-		  <li class="list-group-item"><a href="#genres">Genres</a></li>
-		  <li class="list-group-item"><a href="#platforms">Platforms</a></li>
-		  <li class="list-group-item"><a href="#directors">Directors</a></li>
-		  <li class="list-group-item"><a href="#screenshots">Screenshots</a></li>
-		  <li class="list-group-item"><a href="#schema">Schema</a></li>
-		  <hr>
-		  <h3 class="docs-subtitle">Developers</h3>
-		  <li class="list-group-item"><a href="#contribution">Contribution</a></li>
-		  <li class="list-group-item"><a href="#playground">Playground</a></li>
-		</ul>
-	</div>
+        <a class="icone" href="/schema"><i class="fas fa-sitemap fa-4x"></i></a>
+        <hr>
+        <ul class="list-group">
+          <h3 class="docs-subtitle">Start!</h3>
+          <li class="list-group-item"><a href="#introduction">Introduction</a></li>
+          <li class="list-group-item"><a href="#getting-started">Getting Started</a></li>
+          <li class="list-group-item"><a href="#base-url">Base URL</a></li>
+          <li class="list-group-item"><a href="#authentication">Authentication</a></li>
+          <li class="list-group-item"><a href="#search-filter">Search Filter</a></li>
+          <li class="list-group-item"><a href="#pagination">Pagination</a></li>
+          <li class="list-group-item"><a href="#encoding">Encoding</a></li>
+          <hr>
+          <h3 class="docs-subtitle">Resources</h3>
+          <li class="list-group-item"><a href="#root">Root</a></li>
+          <li class="list-group-item"><a href="#games">Games</a></li>
+          <li class="list-group-item"><a href="#genres">Genres</a></li>
+          <li class="list-group-item"><a href="#platforms">Platforms</a></li>
+          <li class="list-group-item"><a href="#directors">Directors</a></li>
+          <li class="list-group-item"><a href="#screenshots">Screenshots</a></li>
+          <li class="list-group-item"><a href="#schema">Schema</a></li>
+          <hr>
+          <h3 class="docs-subtitle">Developers</h3>
+          <li class="list-group-item"><a href="#contribution">Contribution</a></li>
+          <li class="list-group-item"><a href="#playground">Playground</a></li>
+        </ul>
+    </div>
     <div class="col-md-7">
-		<h2 id="introduction" class="doc-title">Introduction</h2>
-		<p class="docs">Welcome to the <b>Video Games API Documentation</b> here you will better understand the details about the available resources and also learn how to consume them through <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html">HTTP requests</a>.</p>
-		<hr>
-		<h2 id="getting-started" class="doc-title">Getting Started</h2>
-		<p class="docs">
-			Video Games API is an API focused on reading resources, for this reason we will use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET">GET method</a> with it in most scenarios to obtain our resources in JSON format and use it in the way that is most convenient for us.
-		</p>
-		<p class="docs">
-			There are several ways to execute HTTP requests, either through a web browser, a programming language like <a href="https://requests.readthedocs.io/en/master/">Python</a> or <a href="https://github.com/axios/axios">Javascript</a>, or with software like <a href="https://github.com/curl/curl">curl</a> or <a href="https://httpie.org/">httpie</a>. For this specific task we will use httpie for its simplicity. So let's start by asking for resources about the game genres. Open up your terminal and type
-		</p>
-		<code>
-			<pre>http https://videogamesapi.herokuapp.com/api/genres/</pre>
-		</code>
-		<br>
-		<p class="docs">
-			We will immediately receive the following resource in response			
-		</p>
-		<code>
-			<pre>
+        <h2 id="introduction" class="doc-title">Introduction</h2>
+        <p class="docs">Welcome to the <b>Video Games API Documentation</b> here you will better understand the details about the available resources and also learn how to consume them through <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html">HTTP requests</a>.</p>
+        <hr>
+        <h2 id="getting-started" class="doc-title">Getting Started</h2>
+        <p class="docs">
+            Video Games API is an API focused on reading resources, for this reason we will use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET">GET method</a> with it in most scenarios to obtain our resources in JSON format and use it in the way that is most convenient for us.
+        </p>
+        <p class="docs">
+            There are several ways to execute HTTP requests, either through a web browser, a programming language like <a href="https://requests.readthedocs.io/en/master/">Python</a> or <a href="https://github.com/axios/axios">Javascript</a>, or with software like <a href="https://github.com/curl/curl">curl</a> or <a href="https://httpie.org/">httpie</a>. For this specific task we will use httpie for its simplicity. So let's start by asking for resources about the game genres. Open up your terminal and type
+        </p>
+        <code>
+            <pre>http https://videogamesapi.herokuapp.com/api/genres/</pre>
+        </code>
+        <br>
+        <p class="docs">
+            We will immediately receive the following resource in response			
+        </p>
+        <code>
+            <pre>
 HTTP/1.1 200 OK
 Allow: GET, HEAD, OPTIONS
 Content-Length: 351
@@ -101,41 +101,41 @@ X-Frame-Options: DENY
         }
     ]
 }
-			</pre>
-		</code>
-		<p class="docs">
-			As we can see, several game genres are returned to us with their respective ids and names
-		</p>
-		<hr>
-		<h2 id="base-url" class="doc-title">Base URL</h2>
-		<p class="docs">
-			The base URL is the root URL of the API's and it can serve as a map to locate us and understand the resources that are at our disposal.
+            </pre>
+        </code>
+        <p class="docs">
+            As we can see, several game genres are returned to us with their respective ids and names
+        </p>
+        <hr>
+        <h2 id="base-url" class="doc-title">Base URL</h2>
+        <p class="docs">
+            The base URL is the root URL of the API's and it can serve as a map to locate us and understand the resources that are at our disposal.
 
-			The base URL for the Video Games API is as follows
-		</p>
-		<code>
-			<pre>https://videogamesapi.herokuapp.com/api/</pre>
-		</code>
-		<p class="docs">Consider this root URL as the basis for our future requests</p>
-		<hr>
-		<h2 id="authentication" class="doc-title">Authentication</h2>
-		<p class="docs">
-			Video Games API is a completely open API, without the need for authentication or token generation to obtain the data
-		</p>
-		<hr>
-		<h2 id="search-filter" class="doc-title">Search Filter</h2>
-		<p class="docs">
-		  The SearchFilter class supports simple single query parameter based searching, and is based on the Django admin's search functionality. Each resource has a field in which we can query specific data. Let's look at an example to illustrate the idea! 
-		</p>
-		<p class="docs">
-			Let's make an HTTP request to the following URL
-		</p>
-		<code><pre>https://videogamesapi.herokuapp.com/api/games/?search=Castlevania:</pre></code>
-		<p class="docs">
-			We will get a filtered response only from the games we want
-		</p>
-		<code>
-			<pre>
+            The base URL for the Video Games API is as follows
+        </p>
+        <code>
+            <pre>https://videogamesapi.herokuapp.com/api/</pre>
+        </code>
+        <p class="docs">Consider this root URL as the basis for our future requests</p>
+        <hr>
+        <h2 id="authentication" class="doc-title">Authentication</h2>
+        <p class="docs">
+            Video Games API is a completely open API, without the need for authentication or token generation to obtain the data
+        </p>
+        <hr>
+        <h2 id="search-filter" class="doc-title">Search Filter</h2>
+        <p class="docs">
+            The SearchFilter class supports simple single query parameter based searching, and is based on the Django admin's search functionality. Each resource has a field in which we can query specific data. Let's look at an example to illustrate the idea! 
+        </p>
+        <p class="docs">
+            Let's make an HTTP request to the following URL
+        </p>
+        <code><pre>https://videogamesapi.herokuapp.com/api/games/?search=Castlevania:</pre></code>
+        <p class="docs">
+            We will get a filtered response only from the games we want
+        </p>
+        <code>
+            <pre>
 HTTP/1.1 200 OK
 Allow: GET, HEAD, OPTIONS
 Content-Length: 1254
@@ -174,25 +174,25 @@ X-Frame-Options: DENY
         }
     ]
 }				
-			</pre>
-		</code>
-		<p class="docs">
-			In this case the game was filtered by title
-		</p>
-		<hr>
-		<h2 id="pagination" class="doc-title">Pagination</h2>
-		<p class="docs">
-			Video Games API provides data through chunks that can be paged. Let's request the second page of game directors to get an idea of how this mechanism works
-		</p>
-		<p class="docs">
-			Let's request the following URL
-		</p>
-		<code><pre>http https://videogamesapi.herokuapp.com/api/directors/?page=2</pre></code>
-		<p class="docs">
-			Immediately we obtain the respective data on the second page of Games directors
-		</p>
-		<code>
-			<pre>
+            </pre>
+        </code>
+        <p class="docs">
+            In this case the game was filtered by title
+        </p>
+        <hr>
+        <h2 id="pagination" class="doc-title">Pagination</h2>
+        <p class="docs">
+            Video Games API provides data through chunks that can be paged. Let's request the second page of game directors to get an idea of how this mechanism works
+        </p>
+        <p class="docs">
+            Let's request the following URL
+        </p>
+        <code><pre>http https://videogamesapi.herokuapp.com/api/directors/?page=2</pre></code>
+        <p class="docs">
+            Immediately we obtain the respective data on the second page of Games directors
+        </p>
+        <code>
+            <pre>
 HTTP/1.1 200 OK
 Allow: GET, HEAD, OPTIONS
 Content-Length: 592
@@ -250,35 +250,35 @@ X-Frame-Options: DENY
         }
     ]
 }				
-			</pre>
-		</code>
-		<p class="docs">
-			Through pagination we can browse all available data
-		</p>
-		<hr>
-		<h2 id="encoding" class="doc-title">Encoding</h2>
-		<p class="docs">
-			JSON is the standard data format provided by Video Games API by default. You can see details about Schema at the following URL: <a href="https://videogamesapi.herokuapp.com/api/schema/">API Schema</a>
-		</p>
-		<hr>
-		<h1 class="doc-title">Resources</h1>
-		<p>
-			In this section we’ll understand the details about each available resource by the Video Games API
-		</p>
-		<hr>
-		<h2 id="root" class="doc-title">Root</h2>
-		<p class="docs">
-			The Root resource provides information on all available resources within the API. 
-		</p>
-		<p class="docs">
-			Example request:
-		</p>
-		<code><pre>http https://videogamesapi.herokuapp.com/api/</pre></code>
-		<p class="docs">
-			We will get the following response:
-		</p>
-		<code>
-			<pre>
+            </pre>
+        </code>
+        <p class="docs">
+            Through pagination we can browse all available data
+        </p>
+        <hr>
+        <h2 id="encoding" class="doc-title">Encoding</h2>
+        <p class="docs">
+            JSON is the standard data format provided by Video Games API by default. You can see details about Schema at the following URL: <a href="https://videogamesapi.herokuapp.com/api/schema/">API Schema</a>
+        </p>
+        <hr>
+        <h1 class="doc-title">Resources</h1>
+        <p>
+            In this section we’ll understand the details about each available resource by the Video Games API
+        </p>
+        <hr>
+        <h2 id="root" class="doc-title">Root</h2>
+        <p class="docs">
+            The Root resource provides information on all available resources within the API. 
+        </p>
+        <p class="docs">
+            Example request:
+        </p>
+        <code><pre>http https://videogamesapi.herokuapp.com/api/</pre></code>
+        <p class="docs">
+            We will get the following response:
+        </p>
+        <code>
+            <pre>
 HTTP/1.1 200 OK
 Allow: GET, HEAD, OPTIONS
 Content-Length: 246
@@ -296,36 +296,36 @@ X-Frame-Options: DENY
     "platforms": "http://127.0.0.1:8000/api/platforms/",
     "screenshots": "http://127.0.0.1:8000/api/screenshots/"
 }
-			</pre>
-		</code>
-		<br>
-		<h4 class="doc-title">Root Attributes</h4>
-		<ul class="attributes-api">
-			<li># <b>directors</b> | String | The URL root for Directors resources</li>
-			<li># <b>games</b> | String | The URL root for Games resources</li>
-			<li># <b>genres</b> | String | The URL root for Genres resources</li>
-			<li># <b>platforms</b> | String | The URL root for Platforms resources</li>
-			<li># <b>screenshots</b> | String | The URL root for Screenshots resources</li>
-		</ul>
-		<hr>
-		<h2 id="games" class="doc-title">Games</h2>
-		<p class="docs">
-			A game resource represents a game object with several attributes 
-		</p>
-		<h4 class="docs-title">Endpoints</h4>
-		<ul class="attributes-api">
-			<li># <b>/api/games/</b> | Get all the games resources</li>
-			<li># <b>/api/games/{id}</b> | Get a specific game</li>
-		</ul>		
-		<p class="docs">
-			Example request:
-		</p>
-		<code><pre>http https://videogamesapi.herokuapp.com/api/games/5/</pre></code>
-		<p class="docs">
-			We will get the following response:
-		</p>
-		<code>
-			<pre>
+            </pre>
+        </code>
+        <br>
+        <h4 class="doc-title">Root Attributes</h4>
+        <ul class="attributes-api">
+            <li># <b>directors</b> | String | The URL root for Directors resources</li>
+            <li># <b>games</b> | String | The URL root for Games resources</li>
+            <li># <b>genres</b> | String | The URL root for Genres resources</li>
+            <li># <b>platforms</b> | String | The URL root for Platforms resources</li>
+            <li># <b>screenshots</b> | String | The URL root for Screenshots resources</li>
+        </ul>
+        <hr>
+        <h2 id="games" class="doc-title">Games</h2>
+        <p class="docs">
+            A game resource represents a game object with several attributes 
+        </p>
+        <h4 class="docs-title">Endpoints</h4>
+        <ul class="attributes-api">
+            <li># <b>/api/games/</b> | Get all the games resources</li>
+            <li># <b>/api/games/{id}</b> | Get a specific game</li>
+        </ul>		
+        <p class="docs">
+            Example request:
+        </p>
+        <code><pre>http https://videogamesapi.herokuapp.com/api/games/5/</pre></code>
+        <p class="docs">
+            We will get the following response:
+        </p>
+        <code>
+            <pre>
 HTTP/1.1 200 OK
 Allow: GET, HEAD, OPTIONS
 Content-Length: 1089
@@ -354,41 +354,41 @@ X-Frame-Options: DENY
     "release_date": "1991-10-31",
     "title": "Super Castlevania IV"
 }
-			</pre>
-		</code>
-		<br>
-		<h4 class="doc-title">Games Attributes</h4>
-		<ul class="attributes-api">
-			<li># <b>id</b> | Integer | Unique id representing a game</li>
-			<li># <b>title</b> | String | Represents the title of the respective game</li>
-			<li># <b>description</b> | String | A brief description of the game</li>
-			<li># <b>cover</b> | String | image URL representing the game cover</li>
-			<li># <b>developer</b> | String | person or organization responsible for developing the game</li>
-			<li># <b>publisher</b> | String | person or organization responsible for publishing the game</li>
-			<li># <b>director</b> | Array | An array of directors resource URLs representing the directors/creators of the game</li>
-			<li># <b>genre</b> | Array | An array of genres resource URLs representing the genres of the game</li>
-			<li># <b>platform</b> | Array | An array of platforms resource URLs representing the platforms in which the game was released</li>
-			<li># <b>release_date</b> | String | Represents the date on which the game was released</li>
-		</ul>
-		<hr>
-		<h2 id="genres" class="doc-title">Genres</h2>
-		<p class="docs">
-			A genre resource represents a game genre
-		</p>
-		<h4 class="docs-title">Endpoints</h4>
-		<ul class="attributes-api">
-			<li># <b>/api/genres/</b> | Get all the genres resources</li>
-			<li># <b>/api/genres/{id}</b> | Get a specific genre</li>
-		</ul>		
-		<p class="docs">
-			Example request:
-		</p>
-		<code><pre>http https://videogamesapi.herokuapp.com/api/genres/?page=2</pre></code>
-		<p class="docs">
-			Notice that we have requested the second page and we will get the following response:
-		</p>
-		<code>
-			<pre>
+            </pre>
+        </code>
+        <br>
+        <h4 class="doc-title">Games Attributes</h4>
+        <ul class="attributes-api">
+            <li># <b>id</b> | Integer | Unique id representing a game</li>
+            <li># <b>title</b> | String | Represents the title of the respective game</li>
+            <li># <b>description</b> | String | A brief description of the game</li>
+            <li># <b>cover</b> | String | image URL representing the game cover</li>
+            <li># <b>developer</b> | String | person or organization responsible for developing the game</li>
+            <li># <b>publisher</b> | String | person or organization responsible for publishing the game</li>
+            <li># <b>director</b> | Array | An array of directors resource URLs representing the directors/creators of the game</li>
+            <li># <b>genre</b> | Array | An array of genres resource URLs representing the genres of the game</li>
+            <li># <b>platform</b> | Array | An array of platforms resource URLs representing the platforms in which the game was released</li>
+            <li># <b>release_date</b> | String | Represents the date on which the game was released</li>
+        </ul>
+        <hr>
+        <h2 id="genres" class="doc-title">Genres</h2>
+        <p class="docs">
+            A genre resource represents a game genre
+        </p>
+        <h4 class="docs-title">Endpoints</h4>
+        <ul class="attributes-api">
+            <li># <b>/api/genres/</b> | Get all the genres resources</li>
+            <li># <b>/api/genres/{id}</b> | Get a specific genre</li>
+        </ul>		
+        <p class="docs">
+            Example request:
+        </p>
+        <code><pre>http https://videogamesapi.herokuapp.com/api/genres/?page=2</pre></code>
+        <p class="docs">
+            Notice that we have requested the second page and we will get the following response:
+        </p>
+        <code>
+            <pre>
 HTTP/1.1 200 OK
 Allow: GET, HEAD, OPTIONS
 Content-Length: 403
@@ -438,33 +438,33 @@ X-Frame-Options: DENY
         }
     ]
 }
-			</pre>
-		</code>
-		<br>
-		<h4 class="doc-title">Genre Attributes</h4>
-		<ul class="attributes-api">
-			<li># <b>id</b> | Integer | Unique id representing a genre</li>
-			<li># <b>name</b> | String | Represents the name of the respective genre</li>
-		</ul>
-		<hr>
-		<h2 id="platforms" class="doc-title">Platforms</h2>
-		<p class="docs">
-			A platform resource represents a game platform
-		</p>
-		<h4 class="docs-title">Endpoints</h4>
-		<ul class="attributes-api">
-			<li># <b>/api/platforms/</b> | Get all the platforms resources</li>
-			<li># <b>/api/platforms/{id}</b> | Get a specific platform</li>
-		</ul>		
-		<p class="docs">
-			Example request:
-		</p>
-		<code><pre>http https://videogamesapi.herokuapp.com/api/platforms/2/</pre></code>
-		<p class="docs">
-			We will get the following response:
-		</p>
-		<code>
-			<pre>
+            </pre>
+        </code>
+        <br>
+        <h4 class="doc-title">Genre Attributes</h4>
+        <ul class="attributes-api">
+            <li># <b>id</b> | Integer | Unique id representing a genre</li>
+            <li># <b>name</b> | String | Represents the name of the respective genre</li>
+        </ul>
+        <hr>
+        <h2 id="platforms" class="doc-title">Platforms</h2>
+        <p class="docs">
+            A platform resource represents a game platform
+        </p>
+        <h4 class="docs-title">Endpoints</h4>
+        <ul class="attributes-api">
+            <li># <b>/api/platforms/</b> | Get all the platforms resources</li>
+            <li># <b>/api/platforms/{id}</b> | Get a specific platform</li>
+        </ul>		
+        <p class="docs">
+            Example request:
+        </p>
+        <code><pre>http https://videogamesapi.herokuapp.com/api/platforms/2/</pre></code>
+        <p class="docs">
+            We will get the following response:
+        </p>
+        <code>
+            <pre>
 HTTP/1.1 200 OK
 Allow: GET, HEAD, OPTIONS
 Content-Length: 189
@@ -484,38 +484,38 @@ X-Frame-Options: DENY
     "name": "Super Nintendo Entertainment System (SNES)",
     "release_date": "1990-11-21"
 }
-			</pre>
-		</code>
-		<br>
-		<h4 class="doc-title">Platform Attributes</h4>
-		<ul class="attributes-api">
-			<li># <b>id</b> | Integer | Unique id representing a platform</li>
-			<li># <b>name</b> | String | Represents the name of the platform</li>
-			<li># <b>developer</b> | String | Represents the company or person responsible for designing the platform</li>
-			<li># <b>generation</b> | Enum | The generation the platform was part of</li>
-			<li># <b>media</b> | String | The type of media that runs on the platform</li>
-			<li># <b>cpu</b> | String | Represents the CPU responsible for the mathematical calculations</li>
-			<li># <b>release_date</b> | String | Represents the date on which the platform was released</li>
-		</ul>
-		<hr>
-		<h2 id="directors" class="doc-title">Directors</h2>
-		<p class="docs">
-			A director resource represents a game director
-		</p>
-		<h4 class="docs-title">Endpoints</h4>
-		<ul class="attributes-api">
-			<li># <b>/api/directors/</b> | Get all the directors resources</li>
-			<li># <b>/api/directors/{id}</b> | Get a specific director</li>
-		</ul>		
-		<p class="docs">
-			Example request:
-		</p>
-		<code><pre>http https://videogamesapi.herokuapp.com/api/directors/?search=Shigeru</pre></code>
-		<p class="docs">
-			Realize that we have searched for a director by his name through the search filter funcionality and we will get the following response:
-		</p>
-		<code>
-			<pre>
+            </pre>
+        </code>
+        <br>
+        <h4 class="doc-title">Platform Attributes</h4>
+        <ul class="attributes-api">
+            <li># <b>id</b> | Integer | Unique id representing a platform</li>
+            <li># <b>name</b> | String | Represents the name of the platform</li>
+            <li># <b>developer</b> | String | Represents the company or person responsible for designing the platform</li>
+            <li># <b>generation</b> | Enum | The generation the platform was part of</li>
+            <li># <b>media</b> | String | The type of media that runs on the platform</li>
+            <li># <b>cpu</b> | String | Represents the CPU responsible for the mathematical calculations</li>
+            <li># <b>release_date</b> | String | Represents the date on which the platform was released</li>
+        </ul>
+        <hr>
+        <h2 id="directors" class="doc-title">Directors</h2>
+        <p class="docs">
+            A director resource represents a game director
+        </p>
+        <h4 class="docs-title">Endpoints</h4>
+        <ul class="attributes-api">
+            <li># <b>/api/directors/</b> | Get all the directors resources</li>
+            <li># <b>/api/directors/{id}</b> | Get a specific director</li>
+        </ul>		
+        <p class="docs">
+            Example request:
+        </p>
+        <code><pre>http https://videogamesapi.herokuapp.com/api/directors/?search=Shigeru</pre></code>
+        <p class="docs">
+            Realize that we have searched for a director by his name through the search filter funcionality and we will get the following response:
+        </p>
+        <code>
+            <pre>
 HTTP/1.1 200 OK
 Allow: GET, HEAD, OPTIONS
 Content-Length: 109
@@ -538,34 +538,34 @@ X-Frame-Options: DENY
         }
     ]
 }
-			</pre>
-		</code>
-		<br>
-		<h4 class="doc-title">Director Attributes</h4>
-		<ul class="attributes-api">
-			<li># <b>id</b> | Integer | Unique id representing a genre</li>
-			<li># <b>name</b> | String | Represents the name of the platform</li>
-			<li># <b>born_country</b> | String | Represents the country the director was born in</li>
-		</ul>
-		<hr>
-		<h2 id="screenshots" class="doc-title">Screenshots</h2>
-		<p class="docs">
-			A screenshots resource represents screenshots about a game
-		</p>
-		<h4 class="docs-title">Endpoints</h4>
-		<ul class="attributes-api">
-			<li># <b>/api/screenshots/</b> | Get all the screenshots resources</li>
-			<li># <b>/api/screenshots/{id}</b> | Get a specific screenshot identified by an ID</li>
-		</ul>		
-		<p class="docs">
-			Example request:
-		</p>
-		<code><pre>http https://videogamesapi.herokuapp.com/api/screenshots/</pre></code>
-		<p class="docs">
-			We will get the following response:
-		</p>
-		<code>
-			<pre>
+           </pre>
+        </code>
+        <br>
+        <h4 class="doc-title">Director Attributes</h4>
+        <ul class="attributes-api">
+            <li># <b>id</b> | Integer | Unique id representing a genre</li>
+            <li># <b>name</b> | String | Represents the name of the platform</li>
+            <li># <b>born_country</b> | String | Represents the country the director was born in</li>
+        </ul>
+        <hr>
+        <h2 id="screenshots" class="doc-title">Screenshots</h2>
+        <p class="docs">
+            A screenshots resource represents screenshots about a game
+        </p>
+        <h4 class="docs-title">Endpoints</h4>
+        <ul class="attributes-api">
+            <li># <b>/api/screenshots/</b> | Get all the screenshots resources</li>
+            <li># <b>/api/screenshots/{id}</b> | Get a specific screenshot identified by an ID</li>
+        </ul>		
+        <p class="docs">
+            Example request:
+        </p>
+        <code><pre>http https://videogamesapi.herokuapp.com/api/screenshots/</pre></code>
+        <p class="docs">
+            We will get the following response:
+        </p>
+        <code>
+            <pre>
 HTTP/1.1 200 OK
 Allow: GET, HEAD, OPTIONS
 Content-Length: 1747
@@ -607,48 +607,46 @@ X-Frame-Options: DENY
         }
     ]
 }
-			</pre>
-		</code>
-		<br>
-		<h4 class="doc-title">Screenshot Attributes</h4>
-		<ul class="attributes-api">
-			<li># <b>id</b> | Integer | Unique id representing a screenshot</li>
-			<li># <b>game</b> | String | Name of the game we want the screenshots</li>
-			<li># <b>screenshot_1</b> | String | URL for the game screenshot</li>
-			<li># <b>screenshot_2</b> | String | URL for the game screenshot</li>
-			<li># <b>screenshot_3</b> | String | URL for the game screenshot</li>
-			<li># <b>screenshot_4</b> | String | URL for the game screenshot</li>
-		</ul>
-		<hr>
-		<h2 id="schema" class="doc-title">Schema</h2>
-		<p class="docs">
-			API schemas are a useful tool that allow for a range of use cases, including generating reference documentation, or driving dynamic client libraries that can interact with your API.
-		</p>
-		<p class="docs">
-			You can find Schema for the Video Games API by visiting the following link: <a href="/schema">Schema API</a>
-		</p>
-		<hr>
-		<h2 id="contribution" class="doc-title">Contribution</h2>
-		<p class="docs">
-			You can contribute to the Video Games API project in several ways
-		</p>
-		<ul>
-			<li class="contribution-list">Fork or Start the project on <a href="https://github.com/the-akira/VideoGamesAPI">Github</a></li>
-			<li class="contribution-list">Share with your friends <a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Help the project Video Games API https://github.com/the-akira/VideoGamesAPI"
-  data-size="large">
-Tweet</a></li>
-			<li class="contribution-list">Help to improve the Code, Data Models and Documentation</li>
-		</ul>
-		<hr>
-		<h2 id="playground" class="doc-title">Playground</h2>
-		<p class="docs">
-			Django Rest framework provides us with an interface that we can <a href="/api">try the API.</a> You can also test with AJAX at the <a href="/about">following link</a>
-		</p>
-	</div>
+            </pre>
+        </code>
+        <br>
+        <h4 class="doc-title">Screenshot Attributes</h4>
+        <ul class="attributes-api">
+            <li># <b>id</b> | Integer | Unique id representing a screenshot</li>
+            <li># <b>game</b> | String | Name of the game we want the screenshots</li>
+            <li># <b>screenshot_1</b> | String | URL for the game screenshot</li>
+            <li># <b>screenshot_2</b> | String | URL for the game screenshot</li>
+            <li># <b>screenshot_3</b> | String | URL for the game screenshot</li>
+            <li># <b>screenshot_4</b> | String | URL for the game screenshot</li>
+        </ul>
+        <hr>
+        <h2 id="schema" class="doc-title">Schema</h2>
+        <p class="docs">
+            API schemas are a useful tool that allow for a range of use cases, including generating reference documentation, or driving dynamic client libraries that can interact with your API.
+        </p>
+        <p class="docs">
+            You can find Schema for the Video Games API by visiting the following link: <a href="/schema">Schema API</a>
+        </p>
+        <hr>
+        <h2 id="contribution" class="doc-title">Contribution</h2>
+        <p class="docs">
+            You can contribute to the Video Games API project in several ways
+        </p>
+        <ul>
+            <li class="contribution-list">Fork or Start the project on <a href="https://github.com/the-akira/VideoGamesAPI">Github</a></li>
+            <li class="contribution-list">Share with your friends <a class="twitter-share-button"
+                href="https://twitter.com/intent/tweet?text=Help the project Video Games API https://github.com/the-akira/VideoGamesAPI" data-size="large">Tweet</a></li>
+            <li class="contribution-list">Help to improve the Code, Data Models and Documentation</li>
+        </ul>
+        <hr>
+        <h2 id="playground" class="doc-title">Playground</h2>
+        <p class="docs">
+            Django Rest framework provides us with an interface that we can <a href="/api">try the API.</a> You can also test with AJAX at the <a href="/about">following link</a>
+        </p>
+    </div>
   </div>
 </div>
- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
 {% include '_footer.html' %}
 {% endblock content %}
 

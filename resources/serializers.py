@@ -7,19 +7,19 @@ class ScreenshotSerializer(serializers.HyperlinkedModelSerializer):
         fields = ['id','game','screenshot_1','screenshot_2','screenshot_3','screenshot_4']
 
 class GenreSerializer(serializers.HyperlinkedModelSerializer):
-	class Meta:
-		model = Genre 
-		fields = ['id','name']
+    class Meta:
+        model = Genre 
+        fields = ['id','name']
 
 class DirectorSerializer(serializers.HyperlinkedModelSerializer):
-	class Meta:
-		model = Director 
-		fields = ['id','name','born_country']
+    class Meta:
+        model = Director 
+        fields = ['id','name','born_country']
 
 class PlatformSerializer(serializers.HyperlinkedModelSerializer):
-	class Meta:
-		model = Platform 
-		fields = ['id','name','developer','generation','media','cpu','release_date']
+    class Meta:
+        model = Platform 
+        fields = ['id','name','developer','generation','media','cpu','release_date']
 
 class GameSerializer(serializers.HyperlinkedModelSerializer):
     director = serializers.HyperlinkedRelatedField(
@@ -41,16 +41,16 @@ class GameSerializer(serializers.HyperlinkedModelSerializer):
     )
     
     class Meta:
-    	model = Game
-    	fields = [
+        model = Game
+        fields = [
             'id',
-    		'title',
-    		'description',
+            'title',
+            'description',
             'cover',
             'developer',
-    		'publisher',
-    		'director',
-    		'genre',
-    		'platform',
-    		'release_date'
-    	]
+            'publisher',
+            'director',
+            'genre',
+            'platform',
+            'release_date'
+        ]

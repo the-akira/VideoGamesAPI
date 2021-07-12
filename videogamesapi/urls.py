@@ -7,9 +7,9 @@ from rest_framework.renderers import JSONOpenAPIRenderer
 from rest_framework import routers
 
 schema_view = get_schema_view(
-	title='Video Games API',
-	version='0.1', 
-	renderer_classes=[JSONOpenAPIRenderer]
+    title='Video Games API',
+    version='0.1', 
+    renderer_classes=[JSONOpenAPIRenderer]
 )
 
 router = routers.DefaultRouter()

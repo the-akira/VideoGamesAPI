@@ -6,46 +6,45 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-		<h1 class="doc-title">Introduction</h1>
-		<p class="docs">Welcome to the <b>Video Games API</b></p>
-		<p class="docs">Video Games API seeks to bring a variety of great resources about the Game Universe</p>
-		<p class="docs">Explore a wealth of data about games, platforms, game creators, genres and game screenshots</p>
-		<hr>
-		<h3 class="docs-subtitle">The Idea</h3>
-		<p class="docs">The idea of the Video Games API project is to provide a service that provides concise data about the Game Universe and a simple way to interact with the data and integrate it into your application.</p>
-		<p class="docs">The data is available in <a href="https://www.json.org/json-en.html">JSON format</a> and is exposed through a REST implementation that allows you to collect the data programmatically using any programming language.</p>
-		<hr>
-		<h3 class="docs-subtitle">Features</h3>
-		<p class="docs">We are using technologies like <a href="https://www.djangoproject.com/">Django</a> and <a href="https://www.django-rest-framework.org/">Django REST framework</a> to offer you quality and cool features like <b>Pagination</b>, <b>Search Filter</b> and a <b>JSON Schema</b> for our understanding of the attributes of the resources</p>
-		<hr>
-		<h3 class="docs-subtitle">What inspired you to create?</h3>
-		<p class="docs">To develop this project I was inspired by my favorite API's: <a href="https://pokeapi.co/">PokeAPI</a> and <a href="https://swapi.co/">SWAPI</a>, created by software engineer <a href="https://phalt.co">Paul Hallett</a></p>
-		<hr>
-		<h3 class="docs-subtitle">Contribute</h3>
-		<p class="docs">The project is completely open-source and you can contribute to this project in several ways and I will be very grateful to you:</p>
-		<ul>
-			<li class="contribution-list">Help to improve the data models</li>
-			<li class="contribution-list">Share the project in some way</li>
-			<li class="contribution-list">Use it to create an application for you</li>
-			<li class="contribution-list">Provide more data for the project</li>
-			<li class="contribution-list">Donate any small amount of Satoshi <b>1FdGuC2FiCM6nJs9SW4Lek4D4YuRNRKvrk</b></li>
-		</ul>
-		<h1 class="title">Experiment with AJAX</h1>
-		<br>
-		<div class="input-group mb-3">
-		  <div class="input-group-append">
-		    <label class="input-group-text">https://videogamesapi.herokuapp.com/api/</label>
-		  </div>
-		  <input id="inputdata" type="text" class="form-control" placeholder="games/3/" aria-label="Recipient's username" aria-describedby="basic-addon2">
-		  <div class="input-group-append">
-		    <button onClick="XMLRequest(); return false;" class="btn" type="button">Get Data
-		    </button>
-		  </div>
-		</div>
-		<small class="hint">You can also try to make a request for <b>platforms/1</b> or <b>genres/</b> or search <b>games/?search=castlevania</b> or maybe paginate <b>directors/?page=2</b></small>
-		<br>
-		<div class="well">
-			<pre id="output" class="scrollable">
+        <h1 class="doc-title">Introduction</h1>
+        <p class="docs">Welcome to the <b>Video Games API</b></p>
+        <p class="docs">Video Games API seeks to bring a variety of great resources about the Game Universe</p>
+        <p class="docs">Explore a wealth of data about games, platforms, game creators, genres and game screenshots</p>
+        <hr>
+        <h3 class="docs-subtitle">The Idea</h3>
+        <p class="docs">The idea of the Video Games API project is to provide a service that provides concise data about the Game Universe and a simple way to interact with the data and integrate it into your application.</p>
+        <p class="docs">The data is available in <a href="https://www.json.org/json-en.html">JSON format</a> and is exposed through a REST implementation that allows you to collect the data programmatically using any programming language.</p>
+        <hr>
+        <h3 class="docs-subtitle">Features</h3>
+        <p class="docs">We are using technologies like <a href="https://www.djangoproject.com/">Django</a> and <a href="https://www.django-rest-framework.org/">Django REST framework</a> to offer you quality and cool features like <b>Pagination</b>, <b>Search Filter</b> and a <b>JSON Schema</b> for our understanding of the attributes of the resources</p>
+        <hr>
+        <h3 class="docs-subtitle">What inspired you to create?</h3>
+        <p class="docs">To develop this project I was inspired by my favorite API's: <a href="https://pokeapi.co/">PokeAPI</a> and <a href="https://swapi.co/">SWAPI</a>, created by software engineer <a href="https://phalt.co">Paul Hallett</a></p>
+        <hr>
+        <h3 class="docs-subtitle">Contribute</h3>
+        <p class="docs">The project is completely open-source and you can contribute to this project in several ways and I will be very grateful to you:</p>
+        <ul>
+            <li class="contribution-list">Help to improve the data models</li>
+            <li class="contribution-list">Share the project in some way</li>
+            <li class="contribution-list">Use it to create an application for you</li>
+            <li class="contribution-list">Provide more data for the project</li>
+            <li class="contribution-list">Donate any small amount of Satoshi <b>1FdGuC2FiCM6nJs9SW4Lek4D4YuRNRKvrk</b></li>
+        </ul>
+        <h1 class="title">Experiment with AJAX</h1>
+        <br>
+        <div class="input-group mb-3">
+          <div class="input-group-append">
+            <label class="input-group-text">https://videogamesapi.herokuapp.com/api/</label>
+          </div>
+          <input id="inputdata" type="text" class="form-control" placeholder="games/3/" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button onClick="XMLRequest(); return false;" class="btn" type="button">Get Data</button>
+          </div>
+        </div>
+        <small class="hint">You can also try to make a request for <b>platforms/1</b> or <b>genres/</b> or search <b>games/?search=castlevania</b> or maybe paginate <b>directors/?page=2</b></small>
+        <br>
+        <div class="well">
+            <pre id="output" class="scrollable">
 {
     "count": 10,
     "next": "http://127.0.0.1:8000/api/genres/?page=2",
@@ -85,9 +84,9 @@
         }
     ]
 }
-			</pre>		
-		</div>
-	</div>
+            </pre>		
+        </div>
+    </div>
   </div>
 </div>
 {% include '_footer.html' %}
@@ -96,28 +95,28 @@
 {% block scripts %}
 <script type="text/javascript">
 function XMLRequest(){
-	var input = document.getElementById('inputdata').value;
-	var output = document.getElementById('output');
-	if(input == ''){
-		input = 'games/3/';
-	}
-	var apiUrl = `/api/${input}`;
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET", apiUrl, true);
-	xhr.onload = function (e) {
-	  if (xhr.readyState === 4) {
-	    if (xhr.status === 200) {
-	      var data = JSON.parse(xhr.responseText);
-	      output.innerHTML = JSON.stringify(data, null, 3);
-	    } else {
-	      output.innerHTML = `Error ${xhr.statusText}`;
-	    }
-	  }
-	};
-	xhr.onerror = function (e) {
-	  console.error(xhr.statusText);
-	};
-	xhr.send(null);
+    var input = document.getElementById('inputdata').value;
+    var output = document.getElementById('output');
+    if(input == ''){
+        input = 'games/3/';
+    }
+    var apiUrl = `/api/${input}`;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", apiUrl, true);
+    xhr.onload = function (e) {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          var data = JSON.parse(xhr.responseText);
+          output.innerHTML = JSON.stringify(data, null, 3);
+        } else {
+          output.innerHTML = `Error ${xhr.statusText}`;
+        }
+      }
+    };
+    xhr.onerror = function (e) {
+      console.error(xhr.statusText);
+    };
+    xhr.send(null);
 }
 </script>
 {% endblock scripts %}
