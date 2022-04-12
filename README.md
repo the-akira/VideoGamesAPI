@@ -1,7 +1,7 @@
 <h1 align="center">Video Games API</h1>
 
 <h1 align="center">
-    <img alt="avatar" src="https://i.ibb.co/7RgbfN9/unnamed.png"> </br>
+    <img alt="avatar" src="https://raw.githubusercontent.com/the-akira/VideoGamesAPI/master/videogamesapi/static/controller.png"> </br>
 </h1>
 
 <p align="center">Video Games API seeks to bring a variety of great resources about the Game Universe</p> 
