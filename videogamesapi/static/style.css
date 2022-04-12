@@ -333,3 +333,7 @@ a:hover{
 .contribution-list{
   list-style-type: circle;
 }
+
+.foot {
+  height: 20px;
+}
